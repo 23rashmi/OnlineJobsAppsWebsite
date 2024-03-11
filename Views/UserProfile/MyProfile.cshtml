@@ -1,0 +1,145 @@
+﻿@model IEnumerable<JobsPortal.Models.EmployeeMV>
+
+@{
+    ViewBag.Title = "My Profile";
+}
+<style>
+    /* Styles for My Profile View */
+    h2 {
+        margin-top: 30px; /* Push the My Profile heading down */
+    }
+
+    /* Display label above the value */
+    .profile-form .form-group label {
+        display: block;
+        margin-bottom: 5px;
+    }
+
+    /* Add some spacing between each profile form */
+    .profile-form {
+        margin-bottom: 20px;
+    }
+
+    .form-row {
+        display: flex;
+        justify-content: space-between;
+    }
+
+        .form-row .form-group {
+            flex: 0 0 48%; /* Makes sure each form-group takes up roughly half the space, minus a small gap */
+        }
+
+    .profile-form label {
+        font-weight: bold;
+        font-size: 1.1em; /* Increase font size for all labels */
+    }
+
+    .profile-form .display-label {
+        font-size: 1.1em; /* Increase font size for displayed data as well */
+    }
+</style>
+<h2>My Profile</h2>
+
+@foreach (var item in Model)
+{
+    <div class="profile-form">
+        @using (Html.BeginForm("UserProfile", "UserProfile", FormMethod.Post))
+        {
+            @Html.AntiForgeryToken()
+            @Html.HiddenFor(model => item.EmployeeID)
+            @Html.HiddenFor(model => item.UserId)
+
+            <div class="form-row">
+                <div class="form-group">
+                    @Html.LabelFor(model => item.EmployeeName)
+                    @Html.DisplayFor(model => item.EmployeeName, new { @class = "display-label" })
+                </div>
+                <div class="form-group">
+                    @Html.LabelFor(model => item.DOB)
+                    @(item.DOB.HasValue ? item.DOB.Value.Date.ToString("MM/dd/yyyy") : "N/A")
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group">
+                    @Html.LabelFor(model => item.Education)
+                    @Html.DisplayFor(model => item.Education, new { @class = "display-label" })
+                </div>
+
+                <div class="form-group">
+                    @Html.LabelFor(model => item.WorkExperience)
+                    @Html.DisplayFor(model => item.WorkExperience, new { @class = "display-label" })
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group">
+                    @Html.LabelFor(model => item.Skills)
+                    @Html.DisplayFor(model => item.Skills, new { @class = "display-label" })
+                </div>
+
+                <div class="form-group">
+                    @Html.LabelFor(model => item.EmailAddress)
+                    @Html.DisplayFor(model => item.EmailAddress, new { @class = "display-label" })
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group">
+                    @Html.LabelFor(model => item.Gender)
+                    @Html.DisplayFor(model => item.Gender, new { @class = "display-label" })
+                </div>
+
+                <div class="form-group">
+                    @Html.LabelFor(model => item.Photo)
+                    @Html.DisplayFor(model => item.Photo, new { @class = "display-label" })
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group">
+                    @Html.LabelFor(model => item.Qualification)
+                    @Html.DisplayFor(model => item.Qualification, new { @class = "display-label" })
+                </div>
+
+                <div class="form-group">
+                    @Html.LabelFor(model => item.PermanentAddress)
+                    @Html.DisplayFor(model => item.PermanentAddress, new { @class = "display-label" })
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group">
+                    @Html.LabelFor(model => item.JobReference)
+                    @Html.DisplayFor(model => item.JobReference, new { @class = "display-label" })
+                </div>
+
+                <div class="form-group">
+                    @Html.LabelFor(model => item.Description)
+                    @Html.DisplayFor(model => item.Description, new { @class = "display-label" })
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group">
+                    @Html.LabelFor(model => item.ResumeName)
+                    @Html.DisplayFor(model => item.ResumeName, new { @class = "display-label" })
+                </div>
+
+                <div class="form-group">
+                    @Html.LabelFor(model => item.ResumeData)
+                    @Html.DisplayFor(model => item.ResumeData, new { @class = "display-label" })
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group">
+                    @Html.LabelFor(model => item.ResumeType)
+                    @Html.DisplayFor(model => item.ResumeType, new { @class = "display-label" })
+                </div>
+            </div>
+
+            <button type="submit" class="genric-btn info circle">Edit</button>
+        }
+    </div>
+}

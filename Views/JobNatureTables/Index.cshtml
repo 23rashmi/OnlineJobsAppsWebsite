@@ -1,0 +1,56 @@
+﻿@model IEnumerable<DatabaseAccessLayer.JobNatureTable>
+
+@{
+    ViewBag.Title = "Job Natures";
+}
+
+<style>
+    /* Adding some basic styling for better spacing and alignment */
+    .table-head > div,
+    .table-row > div {
+        padding: 8px 15px; /* Adjust as per page requirement */
+    }
+
+    .serial {
+        width: 50px; /* Adjust as per page requirement */
+        text-align: center;
+    }
+
+    .nature {
+        flex: 2; /* give more weight to page requirement */
+    }
+
+    .action {
+        flex: 1;
+    }
+
+    /* Ensuring each row is a flex container for flex properties to take effect */
+    .table-head, .table-row {
+        display: flex;
+    }
+</style>
+
+<div class="section-top-border col-md-10">
+    <h3 class="mb-30">All Job Natures @Html.ActionLink("Add Job Nature", "Create", null, new { @class = "btn btn-default", @style = "float:right; border-radius: 10px;" })</h3>
+    <div class="progress-table-wrap">
+        <div class="progress-table">
+            <div class="table-head">
+                <div class="serial">#</div>
+                <div class="nature">Job Nature</div>
+                <div class="action">Action</div>
+            </div>
+
+            @foreach (var item in Model)
+            {
+                <div class="table-row">
+                    <div class="serial">@Html.DisplayFor(modelItem => item.JobNatureID)</div>
+                    <div class="nature"> @Html.DisplayFor(modelItem => item.JobNature)</div>
+                    <div class="action">
+                        @Html.ActionLink("Edit", "Edit", new { id = item.JobNatureID }, new { @class = "genric-btn primary circle", style = "margin-right:10px;" })
+                    </div>
+                </div>
+            }
+
+        </div>
+    </div>
+</div>

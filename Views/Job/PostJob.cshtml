@@ -1,0 +1,150 @@
+﻿@model JobsPortal.Models.PostJobMV
+@{
+    ViewBag.Title = "Post Job";
+}
+
+<div class="section-top-border">
+    <div class="row">
+        <div class="col-lg-12 col-md-12">
+            <h3 class="mb-30">Post Job</h3>
+
+            @using (Html.BeginForm("PostJob", "Job", FormMethod.Post, new { @class = "form-contact" }))
+            {
+                @Html.AntiForgeryToken()
+                @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+
+                <div class="mt-4">
+                    @Html.LabelFor(model => model.JobTitle, "Enter Job Title", new { @class = "form-label" })
+                    @Html.EditorFor(model => model.JobTitle, new
+                    {
+                        htmlAttributes = new
+                        {
+                            @class = "form-control single-input",
+                            @placeholder = "Enter Job Title"
+                        }
+                    })
+                    @Html.ValidationMessageFor(model => model.JobTitle, "", new { @class = "text-danger" })
+                </div>
+
+                <div class="mt-4">
+                    @Html.LabelFor(model => model.Location, "Enter Job Location", new { @class = "form-label" })
+                    @Html.EditorFor(model => model.Location, new
+                    {
+                        htmlAttributes = new
+                        {
+                            @class = "form-control single-input",
+                            @placeholder = "Enter Job Location"
+                        }
+                    })
+                    @Html.ValidationMessageFor(model => model.Location, "", new { @class = "text-danger" })
+                </div>
+
+                <div class="mt-4">
+                    @Html.LabelFor(model => model.MinSalary, "Enter Minimum Salary", new { @class = "form-label" })
+                    @Html.EditorFor(model => model.MinSalary, new
+                    {
+                        htmlAttributes = new
+                        {
+                            @class = "form-control single-input",
+                            @placeholder = "Enter Minimum Salary"
+                        }
+                    })
+                    @Html.ValidationMessageFor(model => model.MinSalary, "", new { @class = "text-danger" })
+                </div>
+
+                <div class="mt-4">
+                    @Html.LabelFor(model => model.MaxSalary, "Enter Maximum Salary", new { @class = "form-label" })
+                    @Html.EditorFor(model => model.MaxSalary, new
+                    {
+                        htmlAttributes = new
+                        {
+                            @class = "form-control single-input",
+                            @placeholder = "Enter Maximum Salary"
+                        }
+                    })
+                    @Html.ValidationMessageFor(model => model.MaxSalary, "", new { @class = "text-danger" })
+                </div>
+
+                <div class="mt-4">
+                    @Html.LabelFor(model => model.Vacancy, "Enter Vacancies", new { @class = "form-label" })
+                    @Html.EditorFor(model => model.Vacancy, new
+                    {
+                        htmlAttributes = new
+                        {
+                            @class = "form-control single-input",
+                            @placeholder = "Enter Vacancies"
+                        }
+                    })
+                    @Html.ValidationMessageFor(model => model.Vacancy, "", new { @class = "text-danger" })
+                </div>
+
+                <div class="mt-4">
+                    @Html.LabelFor(model => model.WebUrl, "Enter Redirect Job URL", new { @class = "form-label" })
+                    @Html.EditorFor(model => model.WebUrl, new
+                    {
+                        htmlAttributes = new
+                        {
+                            @class = "form-control single-input",
+                            @placeholder = "Enter Redirect URL"
+                        }
+                    })
+                    @Html.ValidationMessageFor(model => model.WebUrl, "", new { @class = "text-danger" })
+                </div>
+
+                <div class="mt-4 col-sm-12">
+                    <div class="form-group">
+                        @Html.Label("Select Job Category", new { @class = "form-label ml-4 mt-2" })
+                        @Html.DropDownList("JobCategoryID", null, "Select Category", htmlAttributes: new { @class = "form-control" })
+                        @Html.ValidationMessageFor(model => model.JobCategoryID, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+
+                <div class="mt-4 col-sm-12">
+                    <div class="form-group">
+                        @Html.Label("Select Job Nature", new { @class = "form-label ml-4 mt-2" })
+                        @Html.DropDownList("JobNatureID", null, "Select Nature", htmlAttributes: new { @class = "form-control" })
+                        @Html.ValidationMessageFor(model => model.JobNatureID, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+
+                <div class="mt-4 col-sm-12" id="divjobdescription">
+                    <div class="form-group">
+                        @Html.LabelFor(model => model.ApplicationDeadline, "Add Application Deadline", new { @class = "form-label" })
+                        @Html.EditorFor(model => model.ApplicationDeadline, new
+                        {
+                            htmlattributes = new
+                            {
+                                @class = "form-control-valid",
+                                @type = "text",
+                                @name = "applicationlastdate",
+                                @id = "applicationlastdate",
+                                @placeholder = "Enter Application Deadline",
+                                @onfocus = "this.placeholder=''",
+                                @onblur = "this.placeholder='Enter Application Deadline'"
+                            }
+                        })
+                        @Html.ValidationMessageFor(model => model.ApplicationDeadline, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+
+                <div class="mt-4">
+                    @Html.LabelFor(model => model.JobDescription, "Add Job Description", new { @class = "form-label" })
+                    @Html.EditorFor(model => model.JobDescription, new
+                    {
+                        htmlAttributes = new
+                        {
+                            @class = "form-control single-input",
+                            @placeholder = "Enter Job Description"
+                        }
+                    })
+                    @Html.ValidationMessageFor(model => model.JobDescription, "", new { @class = "text-danger" })
+                </div>
+
+                <hr />
+                <div class="form-group mt-4">
+                    <input type="submit" value="Post Job" class="genric-btn success e-large circle" />
+                </div>
+            }
+        </div>
+    </div>
+</div>

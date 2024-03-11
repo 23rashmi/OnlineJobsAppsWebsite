@@ -1,0 +1,47 @@
+﻿@model DatabaseAccessLayer.JobNatureTable
+
+@{
+    ViewBag.Title = "New Job Nature";
+}
+
+<div class="section-top-border">
+    <div class="row">
+        <div class="col-lg-6 col-md-6">
+            <h3 class="mb-30">New Job Nature</h3>
+
+            @using (Html.BeginForm())
+            {
+                @Html.AntiForgeryToken()
+                @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+
+                <div class="mt-4">
+                    @Html.LabelFor(model => model.JobNature, new { @class = "form-label" })
+                    @Html.EditorFor(model => model.JobNature, new
+                    {
+                        htmlAttributes = new
+                        {
+                            @class = "form-control single-input",
+                            @type = "text",
+                            @name = "jobnature",
+                            @placeholder = "Enter Job Nature",
+                            @onfocus = "this.placeholder = ''",
+                            @onblur = "this.placeholder = 'Job Nature'",
+                            @required = true
+                        }
+                    })
+                    @Html.ValidationMessageFor(model => model.JobNature, "", new { @class = "text-danger" })
+                </div>
+
+                <hr />
+                <div class="form-group mt-4">
+                    <input type="submit" value="Save" class="genric-btn success e-large circle" style="float:right;" />
+                    @Html.ActionLink("Back to List", "Index", null, new { @class = "btn btn-default", @style = "float:left; border-radius: 10px;" })
+                </div>
+            }
+
+            <div>
+
+            </div>
+        </div>
+    </div>
+</div>

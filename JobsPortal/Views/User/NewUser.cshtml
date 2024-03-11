@@ -1,0 +1,359 @@
+﻿@model JobsPortal.Models.UserMV
+@{
+    ViewBag.Title = "Registration";
+}
+
+@section Styles {
+    <style>
+        /* .registration-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 50%;
+        }
+
+        .registration-form {
+            width: 80%;
+            max-width: 600px;
+            background-color: #f9f9f9;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        
+
+        .label {
+            margin-left: 5%;
+        }
+
+}*/
+
+
+
+        
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color:white;
+        }
+
+        .registration-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+            height: 50%;
+        }
+
+        .registration-form {
+            background: #fff;
+            padding: 40px;
+            width: 400px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+          
+            .registration-form h3 {
+                text-align: center;
+                margin-bottom: 30px;
+                color: #333;
+            }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-label {
+            font-weight: bold;
+        }
+
+        .form-control {
+            width: 100%;
+            height: 40px;
+            padding: 0 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .btn-register {
+            width: 100%;
+            height: 40px;
+            background-color: #4caf50;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+            .btn-register:hover {
+                background-color: #45a049;
+            }
+  
+
+
+
+
+
+
+    </style>
+}
+ 
+
+<div class="registration-container">
+    <div class="registration-form">
+        <h3 class="mb-30 text-center">Registration</h3>
+        
+            @using (Html.BeginForm("NewUser", "User", FormMethod.Post,
+            new
+            {
+                @class = "form-contact",
+                @novalidate = "novalidate",
+                enctype = "multipart/form-data"
+            }))
+            {
+                @Html.AntiForgeryToken()
+                @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+
+                <div class="mt-4">
+                    @Html.LabelFor(model => model.UserName, new { @class = "form-label" })
+                    @Html.EditorFor(model => model.UserName, new
+                    {
+                        htmlAttributes = new
+                        {
+                            @class = "form-control single-input",
+                            @placeholder = "Enter User Name",
+                            @required = true
+                        }
+                    })
+                    @Html.ValidationMessageFor(model => model.UserName, "", new { @class = "text-danger" })
+                </div>
+           
+                <div class="mt-4">
+                    @Html.LabelFor(model => model.Password, new { @class = "form-label" })
+                    <div class="input-group">
+                        @Html.EditorFor(model => model.Password, new
+                        {
+                            htmlAttributes = new
+                            {
+                                @class = "form-control single-input",
+                                @type = "password",
+                                @placeholder = "Enter Password",
+                                @required = true
+                            }
+                        })
+                        <div class="input-group-append">
+                            <span class="input-group-text">
+                                <i class="fa fa-eye-slash toggle-password" toggle="#Password"></i>
+                            </span>
+                        </div>
+                    </div>
+                    @Html.ValidationMessageFor(model => model.Password, "", new { @class = "text-danger" })
+                </div>
+
+                <div class="mt-4">
+                    @Html.LabelFor(model => model.EmailAddress, new { @class = "form-label" })
+                    @Html.EditorFor(model => model.EmailAddress, new
+                    {
+                        htmlAttributes = new
+                        {
+                            @class = "form-control single-input",
+                            @type = "email",
+                            @placeholder = "Enter Email Address",
+                            @onfocus = "this.placeholder = ''",
+                            @onblur = "this.placeholder = 'Email Address'",
+                            @required = true
+                        }
+                    })
+                    @Html.ValidationMessageFor(model => model.EmailAddress, "", new { @class = "text-danger" })
+                </div>
+
+                <div class="mt-4">
+                    @Html.LabelFor(model => model.ContactNo, new { @class = "form-label" })
+                    @Html.EditorFor(model => model.ContactNo, new
+                    {
+                        htmlAttributes = new
+                        {
+                            @class = "form-control single-input",
+                            @type = "tel",
+                            @placeholder = "Enter Contact Number",
+                            @onfocus = "this.placeholder = ''",
+                            @onblur = "this.placeholder = 'Contact Number'",
+                            @required = true
+                        }
+                    })
+                    @Html.ValidationMessageFor(model => model.ContactNo, "", new { @class = "text-danger" })
+                </div>
+
+                <div class="mt-4 col-sm-12">
+                    <div>
+                        <p>
+                            Are you a Job Provider?
+                            @Html.EditorFor(model => model.AreYouProvider)
+                        </p>
+                    </div>
+                </div>
+
+                <div class="mt-4 col-sm-12" id="preferred_location">
+                    <div class="formgroup">
+                        Preferred location
+                        @Html.EditorFor(model => model.Preferred_location, new
+                        {
+                            htmlAttributes = new
+                            {
+                                @class = "form-control valid",
+                                @rows = "5",
+                                @placeholder = "Enter Preferred location",
+                                @onfocus = "this.placeholder = ''",
+                                @onblur = "this.placeholder = 'Enter Preferred location'"
+                            }
+                        })
+                        @Html.ValidationMessageFor(model => model.Preferred_location, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+                <div class="mt-4 col-sm-12" id="Skills">
+                    <div class="formgroup">
+                        @Html.Label("Skills", new { @class = "form-label" })
+                        @Html.EditorFor(model => model.Skills, new
+                        {
+                            htmlAttributes = new
+                            {
+                                @class = "form-control valid",
+                                @rows = "5",
+                                @placeholder = "Enter User Skills",
+                                @onfocus = "this.placeholder = ''",
+                                @onblur = "this.placeholder = 'Enter Skills '"
+                            }
+                        })
+                        @Html.ValidationMessageFor(model => model.Skills, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+                <div class="form-group" id="Resume">
+                    @Html.LabelFor(model => model.Resume, htmlAttributes: new { @class = "control-label col-md-2" })
+                    <div class="col-md-10">
+                        @*@Html.TextBox("file","photo",new {type="file" })*@
+                        <input type="file" name="resume1" accept=".docx,.pdf" />
+                        @Html.ValidationMessageFor(model => model.Resume, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+            
+            <div class="mt-4 col-sm-12" id="divcompanyname">
+                <div class="formgroup">
+                    @Html.Label("Company Title", new { @class = "form-label" })
+                    @Html.EditorFor(model => model.Company.CompanyName, new
+               {
+                   htmlAttributes = new
+                   {
+                       @class = "form-control valid",
+                       @type = "text",
+                       @name = "companyname",
+                       @id = "companyid",
+                       @placeholder = "Enter Company Title",
+                       @onfocus = "this.placeholder = ''",
+                       @onblur = "this.placeholder = 'Enter Company Title'"
+                   }
+               })
+                    @Html.ValidationMessageFor(model => model.Company.CompanyName, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+            <div class="mt-4 col-sm-12" id="divcompanyphoneno">
+                <div class="formgroup">
+                    @Html.Label("Company Contact Number", new { @class = "form-label" })
+                    @Html.EditorFor(model => model.Company.PhoneNo, new
+               {
+                   htmlAttributes = new
+                   {
+                       @class = "form-control valid",
+                       @type = "tel",
+                       @name = "companyphoneno",
+                       @id = "companyphoneno",
+                       @placeholder = "Enter Company Contact Number",
+                       @onfocus = "this.placeholder = ''",
+                       @onblur = "this.placeholder = 'Enter Company Contact Number'"
+                   }
+               })
+                    @Html.ValidationMessageFor(model => model.Company.PhoneNo, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+            <div class="mt-4 col-sm-12" id="divcompanyemail">
+                <div class="formgroup">
+                    @Html.Label("Email Address", new { @class = "form-label" })
+                    @Html.EditorFor(model => model.Company.EmailAddress, new
+                    {
+                        htmlAttributes = new
+                        {
+                            @class = "form-control valid",
+                            @type = "email",
+                            @placeholder = "Enter Company Email",
+                            @onfocus = "this.placeholder = ''",
+                            @onblur = "this.placeholder = 'Enter Company Email'"
+                        }
+                    })
+                    @Html.ValidationMessageFor(model => model.Company.EmailAddress, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+            <div class="mt-4 col-sm-12" id="divcompanydescription">
+                <div class="formgroup">
+                    @Html.Label("Description", new { @class = "form-label" })
+                    @Html.EditorFor(model => model.Company.Description, new
+                    {
+                        htmlAttributes = new
+                        {
+                            @class = "form-control valid",
+                            @rows = "5",
+                            @placeholder = "Enter Company Description",
+                            @onfocus = "this.placeholder = ''",
+                            @onblur = "this.placeholder = 'Enter Company Description'"
+                        }
+                    })
+                    @Html.ValidationMessageFor(model => model.Company.Description, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+            <br />
+            <div class="form-group mt-4">
+                <input style="display: inline-block; background-color: #00008B; color: #fff; border-radius:10%;" type="submit" value="Register" class="genric-btn success e-large circle mx-auto d-block" />
+            </div>
+        }
+    </div>
+</div>
+
+     
+
+
+
+
+
+
+@section Scripts {
+    <script>
+        $(document).ready(function () {
+            $(".toggle-password").click(function () {
+                $(this).toggleClass("fa-eye fa-eye-slash");
+                var input = $($(this).attr("toggle"));
+                if (input.attr("type") == "password") {
+                    input.attr("type", "text");
+                } else {
+                    input.attr("type", "password");
+                }
+            });
+
+            function toggleCompanyFields() {
+                if ($("[name='AreYouProvider']").is(":checked")) {
+                    // Show company fields and hide employee fields
+                    $("#divcompanyname, #divcompanyphoneno, #divcompanyemail, #divcompanydescription").show();
+                    $("#preferred_location, #Skills, #Resume").hide();
+                } else {
+                    // Hide company fields and show employee fields
+                    $("#divcompanyname, #divcompanyphoneno, #divcompanyemail, #divcompanydescription").hide();
+                    $("#preferred_location, #Skills, #Resume").show();
+                }
+            }
+
+            $("[name='AreYouProvider']").change(toggleCompanyFields);
+            toggleCompanyFields();
+
+        });
+    </script>
+}

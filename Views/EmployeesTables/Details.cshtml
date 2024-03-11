@@ -1,0 +1,187 @@
+﻿@model DatabaseAccessLayer.EmployeesTable
+
+@{
+    ViewBag.Title = "Details";
+}
+@section Styles {
+    <style>
+        .dl-horizontal dt:empty,
+        .dl-horizontal dd:empty {
+            display: none; /* Hide the empty elements */
+        }
+
+        .dl-horizontal dt {
+            float: left;
+            width: 240px;
+            text-align: left;
+            clear: both; /* Clear floats to ensure proper alignment */
+            margin-bottom: 15px;
+        }
+
+        .dl-horizontal dd {
+            margin-left: 260px;
+            margin-bottom: 15px;
+        }
+
+        .profile-header {
+            padding: 10px 0;
+            background-color: #f5f5f5;
+            border-bottom: 1px solid #e5e5e5;
+        }
+
+        .profile-section {
+            padding: 20px 0;
+        }
+
+        .edit-button {
+            float: right;
+        }
+    </style>
+}
+<br />
+<div class="container">
+    <div class="profile-header">
+        <h3 class="text-center">My Profile</h3>
+    </div>
+
+    <div class="profile-section">
+        <dl class="dl-horizontal">
+            <dt>
+                @Html.DisplayNameFor(model => model.EmployeeName)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.EmployeeName)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.DOB)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.DOB)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.Education)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.Education)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.WorkExperience)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.WorkExperience)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.Skills)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.Skills)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.EmailAddress)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.EmailAddress)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.Gender)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.Gender)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.Photo)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.Photo)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.Qualification)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.Qualification)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.PermanentAddress)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.PermanentAddress)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.JobReference)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.JobReference)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.Description)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.Description)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.ResumeName)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.ResumeName)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.ResumeData)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.ResumeData)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.ResumeType)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.ResumeType)
+            </dd>
+        </dl>
+    </div>
+    <div class="text-center mt-3">
+        <a href="@Url.Action("Edit")" class="btn btn-primary edit-button">Edit Profile</a>
+    </div>
+</div>
+@section Scripts {
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.dl-horizontal dd').each(function () {
+                if ($.trim($(this).text()) === '') {
+                    $(this).prev('dt').hide();
+                    $(this).hide();
+                }
+            });
+        });
+    </script>
+}
+

@@ -1,0 +1,1327 @@
+2024-03-01 16:23:11,654 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-01 16:29:31,329 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-01 16:32:23,431 INFO JobsPortal.Controllers.UserController - New user with username ABCD created successfully.
+2024-03-01 16:32:49,012 INFO JobsPortal.Controllers.UserController - User with username ABCD logged in successfully.
+2024-03-01 16:32:49,059 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-01 16:37:52,484 INFO JobsPortal.Controllers.UserController - User logged out.
+2024-03-01 16:37:52,523 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-01 16:39:29,723 INFO JobsPortal.Controllers.UserController - User with username Admin logged in successfully.
+2024-03-01 16:39:29,752 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-01 16:40:20,756 INFO JobsPortal.Controllers.JobCategoryTablesController - Accessing JobCategoryTables Index action.
+2024-03-01 16:40:26,272 INFO JobsPortal.Controllers.JobNatureTablesController - Accessing JobNatureTables Index action.
+2024-03-01 16:41:13,112 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-01 16:41:16,579 INFO JobsPortal.Controllers.UserController - User logged out.
+2024-03-01 16:41:16,627 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-01 16:43:12,617 INFO JobsPortal.Controllers.UserController - New user with username xyz created successfully.
+2024-03-01 16:43:33,812 INFO JobsPortal.Controllers.UserController - User with username xyz logged in successfully.
+2024-03-01 16:43:33,840 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-01 16:47:02,797 ERROR JobsPortal.Controllers.JobController - PostJob - Error while posting job by UserID: 4. Exception: An error occurred while updating the entries. See the inner exception for details.
+System.Data.Entity.Infrastructure.DbUpdateException: An error occurred while updating the entries. See the inner exception for details. ---> System.Data.Entity.Core.UpdateException: An error occurred while updating the entries. See the inner exception for details. ---> System.Data.SqlClient.SqlException: The INSERT statement conflicted with the FOREIGN KEY constraint "FK_PostJobTable_JobStatusTable". The conflict occurred in database "JobsPortalDb", table "dbo.JobStatusTables", column 'JobStatusID'.
+The statement has been terminated.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.Entity.Infrastructure.Interception.InternalDispatcher`1.Dispatch[TTarget,TInterceptionContext,TResult](TTarget target, Func`3 operation, TInterceptionContext interceptionContext, Action`3 executing, Action`3 executed)
+   at System.Data.Entity.Infrastructure.Interception.DbCommandDispatcher.Reader(DbCommand command, DbCommandInterceptionContext interceptionContext)
+   at System.Data.Entity.Core.Mapping.Update.Internal.DynamicUpdateCommand.Execute(Dictionary`2 identifierValues, List`1 generatedValues)
+   at System.Data.Entity.Core.Mapping.Update.Internal.UpdateTranslator.Update()
+   --- End of inner exception stack trace ---
+   at System.Data.Entity.Core.Mapping.Update.Internal.UpdateTranslator.Update()
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteInTransaction[T](Func`1 func, IDbExecutionStrategy executionStrategy, Boolean startLocalTransaction, Boolean releaseConnectionOnSuccess)
+   at System.Data.Entity.Core.Objects.ObjectContext.SaveChangesToStore(SaveOptions options, IDbExecutionStrategy executionStrategy, Boolean startLocalTransaction)
+   at System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.Execute[TResult](Func`1 operation)
+   at System.Data.Entity.Core.Objects.ObjectContext.SaveChangesInternal(SaveOptions options, Boolean executeInExistingTransaction)
+   at System.Data.Entity.Internal.InternalContext.SaveChanges()
+   --- End of inner exception stack trace ---
+   at System.Data.Entity.Internal.InternalContext.SaveChanges()
+   at JobsPortal.Controllers.JobController.PostJob(PostJobMV postJobMV) in C:\Users\shrey\Downloads\JobsPortal-first-master\JobsPortal-first-master\JobsPortal\Controllers\JobController.cs:line 73
+2024-03-01 16:50:16,858 INFO JobsPortal.Controllers.JobController - PostJob - Successfully posted job by UserId: 4 and CompanyID: 1
+2024-03-01 16:54:44,152 INFO JobsPortal.Controllers.UserController - User logged out.
+2024-03-01 16:54:44,212 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-01 16:55:08,388 INFO JobsPortal.Controllers.UserController - User with username Admin logged in successfully.
+2024-03-01 16:55:08,435 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-01 16:55:53,263 INFO JobsPortal.Controllers.UserController - User logged out.
+2024-03-01 16:55:53,316 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-01 16:56:33,825 WARN JobsPortal.Controllers.UserController - Login failed for username ABCD. Incorrect username or password.
+2024-03-01 16:59:26,437 INFO JobsPortal.Controllers.UserController - User with username ABCD logged in successfully.
+2024-03-01 16:59:26,486 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-01 17:08:04,087 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-01 17:11:21,287 WARN JobsPortal.Controllers.UserController - Login failed for username xyz. Incorrect username or password.
+2024-03-01 17:12:33,273 INFO JobsPortal.Controllers.UserController - New user with username pqr created successfully.
+2024-03-01 17:13:04,854 INFO JobsPortal.Controllers.UserController - User with username pqr logged in successfully.
+2024-03-01 17:13:04,906 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-01 17:13:25,986 INFO JobsPortal.Controllers.UserController - User logged out.
+2024-03-01 17:13:26,035 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-01 17:14:14,156 INFO JobsPortal.Controllers.UserController - User with username ABCD logged in successfully.
+2024-03-01 17:14:14,194 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-01 17:14:28,209 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's About action.
+2024-03-01 17:14:42,109 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-01 17:16:00,615 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's About action.
+2024-03-01 17:16:03,239 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Contact action.
+2024-03-01 17:16:10,993 INFO JobsPortal.Controllers.UserController - User logged out.
+2024-03-01 17:16:11,028 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-01 17:17:00,766 INFO JobsPortal.Controllers.UserController - User with username Admin logged in successfully.
+2024-03-01 17:17:00,800 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-01 17:17:16,003 INFO JobsPortal.Controllers.JobNatureTablesController - Accessing JobNatureTables Index action.
+2024-03-01 22:01:05,685 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-01 22:01:59,075 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-01 22:02:32,467 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-01 22:02:39,565 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-01 22:05:26,548 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-01 22:06:27,231 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-01 22:06:32,019 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's About action.
+2024-03-01 22:06:36,219 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Contact action.
+2024-03-01 22:09:31,777 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-01 22:09:34,091 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's About action.
+2024-03-01 22:09:35,576 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Contact action.
+2024-03-02 14:22:09,550 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-02 14:31:51,640 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-02 15:43:23,501 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-02 18:18:18,728 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-02 18:20:17,313 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-02 18:20:19,826 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's About action.
+2024-03-02 18:20:43,815 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-02 18:21:13,267 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Contact action.
+2024-03-02 18:21:40,886 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's About action.
+2024-03-02 18:21:43,186 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Contact action.
+2024-03-02 18:32:41,176 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-02 18:44:31,828 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-02 19:53:58,881 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-03 14:22:44,161 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-03 14:23:00,220 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-03 14:24:02,709 WARN JobsPortal.Controllers.UserController - Login failed for username Admin. Incorrect username or password.
+2024-03-03 14:30:06,097 INFO JobsPortal.Controllers.UserController - User with username Admin logged in successfully.
+2024-03-03 14:30:06,230 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-03 14:30:28,724 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-03 14:30:31,620 INFO JobsPortal.Controllers.JobCategoryTablesController - Accessing JobCategoryTables Index action.
+2024-03-03 14:30:35,786 INFO JobsPortal.Controllers.JobCategoryTablesController - Accessing JobCategoryTables Create action (GET).
+2024-03-03 14:32:41,466 INFO JobsPortal.Controllers.JobCategoryTablesController - Accessing JobCategoryTables Index action.
+2024-03-03 14:32:44,351 INFO JobsPortal.Controllers.JobCategoryTablesController - Accessing JobCategoryTables Create action (GET).
+2024-03-03 14:33:02,903 INFO JobsPortal.Controllers.JobCategoryTablesController - Accessing JobCategoryTables Create action (GET).
+2024-03-03 14:33:12,342 INFO JobsPortal.Controllers.JobCategoryTablesController - Submitting JobCategoryTables Create action (POST).
+2024-03-03 14:33:12,342 DEBUG JobsPortal.Controllers.JobCategoryTablesController - ModelState is valid. Adding new JobCategoryTable to database.
+2024-03-03 14:33:13,111 INFO JobsPortal.Controllers.JobCategoryTablesController - Successfully added new JobCategoryTable. Redirecting to Index action.
+2024-03-03 14:33:13,162 INFO JobsPortal.Controllers.JobCategoryTablesController - Accessing JobCategoryTables Index action.
+2024-03-03 14:33:18,905 INFO JobsPortal.Controllers.JobCategoryTablesController - Accessing JobCategoryTables Create action (GET).
+2024-03-03 14:34:50,682 INFO JobsPortal.Controllers.JobCategoryTablesController - Submitting JobCategoryTables Create action (POST).
+2024-03-03 14:34:50,682 DEBUG JobsPortal.Controllers.JobCategoryTablesController - ModelState is valid. Adding new JobCategoryTable to database.
+2024-03-03 14:34:50,731 INFO JobsPortal.Controllers.JobCategoryTablesController - Successfully added new JobCategoryTable. Redirecting to Index action.
+2024-03-03 14:34:50,821 INFO JobsPortal.Controllers.JobCategoryTablesController - Accessing JobCategoryTables Index action.
+2024-03-03 14:35:10,795 INFO JobsPortal.Controllers.JobCategoryTablesController - Accessing JobCategoryTables Edit action (GET) for ID: 2.
+2024-03-03 14:35:13,846 INFO JobsPortal.Controllers.JobCategoryTablesController - Submitting JobCategoryTables Edit action (POST) for ID: 2.
+2024-03-03 14:35:13,846 DEBUG JobsPortal.Controllers.JobCategoryTablesController - ModelState is valid. Modifying JobCategoryTable in database.
+2024-03-03 14:35:13,943 INFO JobsPortal.Controllers.JobCategoryTablesController - Successfully modified JobCategoryTable with ID: 2. Redirecting to Index action.
+2024-03-03 14:35:13,994 INFO JobsPortal.Controllers.JobCategoryTablesController - Accessing JobCategoryTables Index action.
+2024-03-03 14:35:17,821 INFO JobsPortal.Controllers.JobCategoryTablesController - Accessing JobCategoryTables Edit action (GET) for ID: 2.
+2024-03-03 14:35:22,622 INFO JobsPortal.Controllers.JobCategoryTablesController - Accessing JobCategoryTables Edit action (GET) for ID: 2.
+2024-03-03 14:35:48,715 INFO JobsPortal.Controllers.JobCategoryTablesController - Accessing JobCategoryTables Index action.
+2024-03-03 14:36:19,748 INFO JobsPortal.Controllers.JobCategoryTablesController - Accessing JobCategoryTables Edit action (GET) for ID: 2.
+2024-03-03 14:36:46,971 INFO JobsPortal.Controllers.JobCategoryTablesController - Accessing JobCategoryTables Index action.
+2024-03-03 14:36:51,563 INFO JobsPortal.Controllers.JobNatureTablesController - Accessing JobNatureTables Index action.
+2024-03-03 14:36:56,809 INFO JobsPortal.Controllers.JobNatureTablesController - Accessing JobNatureTables Create action (GET).
+2024-03-03 14:37:07,240 INFO JobsPortal.Controllers.JobNatureTablesController - Submitting JobNatureTables Create action (POST).
+2024-03-03 14:37:07,240 DEBUG JobsPortal.Controllers.JobNatureTablesController - ModelState is valid. Adding new JobNatureTable to database.
+2024-03-03 14:37:07,324 INFO JobsPortal.Controllers.JobNatureTablesController - Successfully added new JobNatureTable. Redirecting to Index action.
+2024-03-03 14:37:07,380 INFO JobsPortal.Controllers.JobNatureTablesController - Accessing JobNatureTables Index action.
+2024-03-03 14:37:09,735 INFO JobsPortal.Controllers.JobNatureTablesController - Accessing JobNatureTables Create action (GET).
+2024-03-03 14:37:20,868 INFO JobsPortal.Controllers.JobNatureTablesController - Submitting JobNatureTables Create action (POST).
+2024-03-03 14:37:20,868 DEBUG JobsPortal.Controllers.JobNatureTablesController - ModelState is valid. Adding new JobNatureTable to database.
+2024-03-03 14:37:20,993 INFO JobsPortal.Controllers.JobNatureTablesController - Successfully added new JobNatureTable. Redirecting to Index action.
+2024-03-03 14:37:21,043 INFO JobsPortal.Controllers.JobNatureTablesController - Accessing JobNatureTables Index action.
+2024-03-03 14:37:23,025 INFO JobsPortal.Controllers.JobNatureTablesController - Accessing JobNatureTables Create action (GET).
+2024-03-03 14:37:28,378 INFO JobsPortal.Controllers.JobNatureTablesController - Submitting JobNatureTables Create action (POST).
+2024-03-03 14:37:28,379 DEBUG JobsPortal.Controllers.JobNatureTablesController - ModelState is valid. Adding new JobNatureTable to database.
+2024-03-03 14:37:28,447 INFO JobsPortal.Controllers.JobNatureTablesController - Successfully added new JobNatureTable. Redirecting to Index action.
+2024-03-03 14:37:28,532 INFO JobsPortal.Controllers.JobNatureTablesController - Accessing JobNatureTables Index action.
+2024-03-03 14:37:42,495 INFO JobsPortal.Controllers.UserController - User logged out.
+2024-03-03 14:37:42,553 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-03 14:40:47,521 INFO JobsPortal.Controllers.UserController - New user with username Employer created successfully.
+2024-03-03 14:41:20,189 INFO JobsPortal.Controllers.UserController - User with username Employer logged in successfully.
+2024-03-03 14:41:20,237 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-03 14:41:33,601 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's About action.
+2024-03-03 14:43:34,118 ERROR JobsPortal.Controllers.JobController - PostJob - Error while posting job by UserID: 4. Exception: An error occurred while updating the entries. See the inner exception for details.
+System.Data.Entity.Infrastructure.DbUpdateException: An error occurred while updating the entries. See the inner exception for details. ---> System.Data.Entity.Core.UpdateException: An error occurred while updating the entries. See the inner exception for details. ---> System.Data.SqlClient.SqlException: The INSERT statement conflicted with the FOREIGN KEY constraint "FK_PostJobTable_JobStatusTable". The conflict occurred in database "JobsPortalDb", table "dbo.JobStatusTables", column 'JobStatusID'.
+The statement has been terminated.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.Entity.Infrastructure.Interception.InternalDispatcher`1.Dispatch[TTarget,TInterceptionContext,TResult](TTarget target, Func`3 operation, TInterceptionContext interceptionContext, Action`3 executing, Action`3 executed)
+   at System.Data.Entity.Infrastructure.Interception.DbCommandDispatcher.Reader(DbCommand command, DbCommandInterceptionContext interceptionContext)
+   at System.Data.Entity.Core.Mapping.Update.Internal.DynamicUpdateCommand.Execute(Dictionary`2 identifierValues, List`1 generatedValues)
+   at System.Data.Entity.Core.Mapping.Update.Internal.UpdateTranslator.Update()
+   --- End of inner exception stack trace ---
+   at System.Data.Entity.Core.Mapping.Update.Internal.UpdateTranslator.Update()
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteInTransaction[T](Func`1 func, IDbExecutionStrategy executionStrategy, Boolean startLocalTransaction, Boolean releaseConnectionOnSuccess)
+   at System.Data.Entity.Core.Objects.ObjectContext.SaveChangesToStore(SaveOptions options, IDbExecutionStrategy executionStrategy, Boolean startLocalTransaction)
+   at System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.Execute[TResult](Func`1 operation)
+   at System.Data.Entity.Core.Objects.ObjectContext.SaveChangesInternal(SaveOptions options, Boolean executeInExistingTransaction)
+   at System.Data.Entity.Internal.InternalContext.SaveChanges()
+   --- End of inner exception stack trace ---
+   at System.Data.Entity.Internal.InternalContext.SaveChanges()
+   at JobsPortal.Controllers.JobController.PostJob(PostJobMV postJobMV) in C:\Users\shrey\Downloads\JobsPortal-first-master\JobsPortal-first-master\JobsPortal\Controllers\JobController.cs:line 73
+2024-03-03 14:45:30,310 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-03 14:46:24,733 WARN JobsPortal.Controllers.UserController - Login failed for username Job Seeker. Incorrect username or password.
+2024-03-03 14:50:12,809 INFO JobsPortal.Controllers.UserController - New user with username Job Seeker created successfully.
+2024-03-03 14:51:15,210 WARN JobsPortal.Controllers.UserController - Login failed for username Job Seeker. Incorrect username or password.
+2024-03-03 14:52:32,508 WARN JobsPortal.Controllers.UserController - Login failed for username Job Seeker. Incorrect username or password.
+2024-03-03 14:57:28,396 INFO JobsPortal.Controllers.UserController - User with username Job Seeker logged in successfully.
+2024-03-03 14:57:28,466 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-03 14:57:59,750 INFO JobsPortal.Controllers.UserController - User logged out.
+2024-03-03 14:57:59,798 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-03 14:58:00,259 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's About action.
+2024-03-03 15:00:13,604 INFO JobsPortal.Controllers.UserController - User with username Employer logged in successfully.
+2024-03-03 15:00:13,654 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-03 15:00:54,881 ERROR JobsPortal.Controllers.JobController - PostJob - Error while posting job by UserID: 4. Exception: An error occurred while updating the entries. See the inner exception for details.
+System.Data.Entity.Infrastructure.DbUpdateException: An error occurred while updating the entries. See the inner exception for details. ---> System.Data.Entity.Core.UpdateException: An error occurred while updating the entries. See the inner exception for details. ---> System.Data.SqlClient.SqlException: The INSERT statement conflicted with the FOREIGN KEY constraint "FK_PostJobTable_JobStatusTable". The conflict occurred in database "JobsPortalDb", table "dbo.JobStatusTables", column 'JobStatusID'.
+The statement has been terminated.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.Entity.Infrastructure.Interception.InternalDispatcher`1.Dispatch[TTarget,TInterceptionContext,TResult](TTarget target, Func`3 operation, TInterceptionContext interceptionContext, Action`3 executing, Action`3 executed)
+   at System.Data.Entity.Infrastructure.Interception.DbCommandDispatcher.Reader(DbCommand command, DbCommandInterceptionContext interceptionContext)
+   at System.Data.Entity.Core.Mapping.Update.Internal.DynamicUpdateCommand.Execute(Dictionary`2 identifierValues, List`1 generatedValues)
+   at System.Data.Entity.Core.Mapping.Update.Internal.UpdateTranslator.Update()
+   --- End of inner exception stack trace ---
+   at System.Data.Entity.Core.Mapping.Update.Internal.UpdateTranslator.Update()
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteInTransaction[T](Func`1 func, IDbExecutionStrategy executionStrategy, Boolean startLocalTransaction, Boolean releaseConnectionOnSuccess)
+   at System.Data.Entity.Core.Objects.ObjectContext.SaveChangesToStore(SaveOptions options, IDbExecutionStrategy executionStrategy, Boolean startLocalTransaction)
+   at System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.Execute[TResult](Func`1 operation)
+   at System.Data.Entity.Core.Objects.ObjectContext.SaveChangesInternal(SaveOptions options, Boolean executeInExistingTransaction)
+   at System.Data.Entity.Internal.InternalContext.SaveChanges()
+   --- End of inner exception stack trace ---
+   at System.Data.Entity.Internal.InternalContext.SaveChanges()
+   at JobsPortal.Controllers.JobController.PostJob(PostJobMV postJobMV) in C:\Users\shrey\Downloads\JobsPortal-first-master\JobsPortal-first-master\JobsPortal\Controllers\JobController.cs:line 73
+2024-03-03 15:02:15,718 ERROR JobsPortal.Controllers.JobController - PostJob - Error while posting job by UserID: 4. Exception: An error occurred while updating the entries. See the inner exception for details.
+System.Data.Entity.Infrastructure.DbUpdateException: An error occurred while updating the entries. See the inner exception for details. ---> System.Data.Entity.Core.UpdateException: An error occurred while updating the entries. See the inner exception for details. ---> System.Data.SqlClient.SqlException: The INSERT statement conflicted with the FOREIGN KEY constraint "FK_PostJobTable_JobStatusTable". The conflict occurred in database "JobsPortalDb", table "dbo.JobStatusTables", column 'JobStatusID'.
+The statement has been terminated.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.Entity.Infrastructure.Interception.InternalDispatcher`1.Dispatch[TTarget,TInterceptionContext,TResult](TTarget target, Func`3 operation, TInterceptionContext interceptionContext, Action`3 executing, Action`3 executed)
+   at System.Data.Entity.Infrastructure.Interception.DbCommandDispatcher.Reader(DbCommand command, DbCommandInterceptionContext interceptionContext)
+   at System.Data.Entity.Core.Mapping.Update.Internal.DynamicUpdateCommand.Execute(Dictionary`2 identifierValues, List`1 generatedValues)
+   at System.Data.Entity.Core.Mapping.Update.Internal.UpdateTranslator.Update()
+   --- End of inner exception stack trace ---
+   at System.Data.Entity.Core.Mapping.Update.Internal.UpdateTranslator.Update()
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteInTransaction[T](Func`1 func, IDbExecutionStrategy executionStrategy, Boolean startLocalTransaction, Boolean releaseConnectionOnSuccess)
+   at System.Data.Entity.Core.Objects.ObjectContext.SaveChangesToStore(SaveOptions options, IDbExecutionStrategy executionStrategy, Boolean startLocalTransaction)
+   at System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.Execute[TResult](Func`1 operation)
+   at System.Data.Entity.Core.Objects.ObjectContext.SaveChangesInternal(SaveOptions options, Boolean executeInExistingTransaction)
+   at System.Data.Entity.Internal.InternalContext.SaveChanges()
+   --- End of inner exception stack trace ---
+   at System.Data.Entity.Internal.InternalContext.SaveChanges()
+   at JobsPortal.Controllers.JobController.PostJob(PostJobMV postJobMV) in C:\Users\shrey\Downloads\JobsPortal-first-master\JobsPortal-first-master\JobsPortal\Controllers\JobController.cs:line 73
+2024-03-03 15:02:54,049 ERROR JobsPortal.Controllers.JobController - PostJob - Error while posting job by UserID: 4. Exception: An error occurred while updating the entries. See the inner exception for details.
+System.Data.Entity.Infrastructure.DbUpdateException: An error occurred while updating the entries. See the inner exception for details. ---> System.Data.Entity.Core.UpdateException: An error occurred while updating the entries. See the inner exception for details. ---> System.Data.SqlClient.SqlException: The INSERT statement conflicted with the FOREIGN KEY constraint "FK_PostJobTable_JobStatusTable". The conflict occurred in database "JobsPortalDb", table "dbo.JobStatusTables", column 'JobStatusID'.
+The statement has been terminated.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.Entity.Infrastructure.Interception.InternalDispatcher`1.Dispatch[TTarget,TInterceptionContext,TResult](TTarget target, Func`3 operation, TInterceptionContext interceptionContext, Action`3 executing, Action`3 executed)
+   at System.Data.Entity.Infrastructure.Interception.DbCommandDispatcher.Reader(DbCommand command, DbCommandInterceptionContext interceptionContext)
+   at System.Data.Entity.Core.Mapping.Update.Internal.DynamicUpdateCommand.Execute(Dictionary`2 identifierValues, List`1 generatedValues)
+   at System.Data.Entity.Core.Mapping.Update.Internal.UpdateTranslator.Update()
+   --- End of inner exception stack trace ---
+   at System.Data.Entity.Core.Mapping.Update.Internal.UpdateTranslator.Update()
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteInTransaction[T](Func`1 func, IDbExecutionStrategy executionStrategy, Boolean startLocalTransaction, Boolean releaseConnectionOnSuccess)
+   at System.Data.Entity.Core.Objects.ObjectContext.SaveChangesToStore(SaveOptions options, IDbExecutionStrategy executionStrategy, Boolean startLocalTransaction)
+   at System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.Execute[TResult](Func`1 operation)
+   at System.Data.Entity.Core.Objects.ObjectContext.SaveChangesInternal(SaveOptions options, Boolean executeInExistingTransaction)
+   at System.Data.Entity.Internal.InternalContext.SaveChanges()
+   --- End of inner exception stack trace ---
+   at System.Data.Entity.Internal.InternalContext.SaveChanges()
+   at JobsPortal.Controllers.JobController.PostJob(PostJobMV postJobMV) in C:\Users\shrey\Downloads\JobsPortal-first-master\JobsPortal-first-master\JobsPortal\Controllers\JobController.cs:line 73
+2024-03-03 17:02:50,723 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-03 17:03:19,168 INFO JobsPortal.Controllers.UserController - User with username Employer logged in successfully.
+2024-03-03 17:03:19,202 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-03 17:04:28,556 ERROR JobsPortal.Controllers.JobController - PostJob - Error while posting job by UserID: 4. Exception: An error occurred while updating the entries. See the inner exception for details.
+System.Data.Entity.Infrastructure.DbUpdateException: An error occurred while updating the entries. See the inner exception for details. ---> System.Data.Entity.Core.UpdateException: An error occurred while updating the entries. See the inner exception for details. ---> System.Data.SqlClient.SqlException: The INSERT statement conflicted with the FOREIGN KEY constraint "FK_PostJobTable_JobStatusTable". The conflict occurred in database "JobsPortalDb", table "dbo.JobStatusTables", column 'JobStatusID'.
+The statement has been terminated.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.Entity.Infrastructure.Interception.InternalDispatcher`1.Dispatch[TTarget,TInterceptionContext,TResult](TTarget target, Func`3 operation, TInterceptionContext interceptionContext, Action`3 executing, Action`3 executed)
+   at System.Data.Entity.Infrastructure.Interception.DbCommandDispatcher.Reader(DbCommand command, DbCommandInterceptionContext interceptionContext)
+   at System.Data.Entity.Core.Mapping.Update.Internal.DynamicUpdateCommand.Execute(Dictionary`2 identifierValues, List`1 generatedValues)
+   at System.Data.Entity.Core.Mapping.Update.Internal.UpdateTranslator.Update()
+   --- End of inner exception stack trace ---
+   at System.Data.Entity.Core.Mapping.Update.Internal.UpdateTranslator.Update()
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteInTransaction[T](Func`1 func, IDbExecutionStrategy executionStrategy, Boolean startLocalTransaction, Boolean releaseConnectionOnSuccess)
+   at System.Data.Entity.Core.Objects.ObjectContext.SaveChangesToStore(SaveOptions options, IDbExecutionStrategy executionStrategy, Boolean startLocalTransaction)
+   at System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.Execute[TResult](Func`1 operation)
+   at System.Data.Entity.Core.Objects.ObjectContext.SaveChangesInternal(SaveOptions options, Boolean executeInExistingTransaction)
+   at System.Data.Entity.Internal.InternalContext.SaveChanges()
+   --- End of inner exception stack trace ---
+   at System.Data.Entity.Internal.InternalContext.SaveChanges()
+   at JobsPortal.Controllers.JobController.PostJob(PostJobMV postJobMV) in C:\Users\shrey\Downloads\JobsPortal-first-master\JobsPortal-first-master\JobsPortal\Controllers\JobController.cs:line 73
+2024-03-03 17:06:11,011 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-03 17:06:34,730 INFO JobsPortal.Controllers.UserController - User with username Employer logged in successfully.
+2024-03-03 17:06:34,764 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-03 17:07:09,352 ERROR JobsPortal.Controllers.JobController - PostJob - Error while posting job by UserID: 4. Exception: An error occurred while updating the entries. See the inner exception for details.
+System.Data.Entity.Infrastructure.DbUpdateException: An error occurred while updating the entries. See the inner exception for details. ---> System.Data.Entity.Core.UpdateException: An error occurred while updating the entries. See the inner exception for details. ---> System.Data.SqlClient.SqlException: The INSERT statement conflicted with the FOREIGN KEY constraint "FK_PostJobTable_JobStatusTable". The conflict occurred in database "JobsPortalDb", table "dbo.JobStatusTables", column 'JobStatusID'.
+The statement has been terminated.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.Entity.Infrastructure.Interception.InternalDispatcher`1.Dispatch[TTarget,TInterceptionContext,TResult](TTarget target, Func`3 operation, TInterceptionContext interceptionContext, Action`3 executing, Action`3 executed)
+   at System.Data.Entity.Infrastructure.Interception.DbCommandDispatcher.Reader(DbCommand command, DbCommandInterceptionContext interceptionContext)
+   at System.Data.Entity.Core.Mapping.Update.Internal.DynamicUpdateCommand.Execute(Dictionary`2 identifierValues, List`1 generatedValues)
+   at System.Data.Entity.Core.Mapping.Update.Internal.UpdateTranslator.Update()
+   --- End of inner exception stack trace ---
+   at System.Data.Entity.Core.Mapping.Update.Internal.UpdateTranslator.Update()
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteInTransaction[T](Func`1 func, IDbExecutionStrategy executionStrategy, Boolean startLocalTransaction, Boolean releaseConnectionOnSuccess)
+   at System.Data.Entity.Core.Objects.ObjectContext.SaveChangesToStore(SaveOptions options, IDbExecutionStrategy executionStrategy, Boolean startLocalTransaction)
+   at System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.Execute[TResult](Func`1 operation)
+   at System.Data.Entity.Core.Objects.ObjectContext.SaveChangesInternal(SaveOptions options, Boolean executeInExistingTransaction)
+   at System.Data.Entity.Internal.InternalContext.SaveChanges()
+   --- End of inner exception stack trace ---
+   at System.Data.Entity.Internal.InternalContext.SaveChanges()
+   at JobsPortal.Controllers.JobController.PostJob(PostJobMV postJobMV) in C:\Users\shrey\Downloads\JobsPortal-first-master\JobsPortal-first-master\JobsPortal\Controllers\JobController.cs:line 73
+2024-03-03 17:17:04,409 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-03 17:17:14,340 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Contact action.
+2024-03-03 17:17:34,411 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-03 17:35:12,826 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-03 17:43:24,049 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-03 17:57:01,693 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-03 17:57:24,516 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-03 17:59:03,839 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-03 18:42:37,911 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-03 18:45:19,514 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-03 18:47:13,060 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-03 18:50:31,488 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-03 18:56:59,862 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-03 19:02:16,710 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-03 19:05:49,204 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-03 19:20:39,157 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-03 19:27:50,248 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-03 19:29:16,315 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-03 19:30:09,985 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-03 19:31:10,146 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-03 19:32:14,933 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-03 19:33:22,879 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-03 19:43:37,232 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-03 19:55:03,957 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-03 20:04:53,276 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-03 20:05:01,137 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-03 20:05:09,383 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-03 20:05:27,506 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-03 20:06:17,193 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-03 20:09:23,985 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-03 20:10:34,540 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-03 20:10:36,984 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's About action.
+2024-03-03 20:10:40,396 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Contact action.
+2024-03-03 20:10:45,620 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-03 20:12:13,980 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-03 20:20:12,371 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-03 20:24:12,368 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-03 20:26:29,555 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's About action.
+2024-03-03 20:26:33,759 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Contact action.
+2024-03-03 20:26:43,887 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-03 20:27:48,598 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Contact action.
+2024-03-03 20:27:53,170 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-03 20:28:23,395 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Contact action.
+2024-03-03 20:28:26,076 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's About action.
+2024-03-03 20:28:29,867 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-03 20:51:06,124 INFO JobsPortal.Controllers.UserController - User with username Admin logged in successfully.
+2024-03-03 20:51:06,178 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-03 20:51:50,973 INFO JobsPortal.Controllers.JobCategoryTablesController - Accessing JobCategoryTables Index action.
+2024-03-03 20:51:59,697 INFO JobsPortal.Controllers.JobNatureTablesController - Accessing JobNatureTables Index action.
+2024-03-03 20:52:48,945 INFO JobsPortal.Controllers.UserController - User logged out.
+2024-03-03 20:52:48,994 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-03 20:54:46,514 INFO JobsPortal.Controllers.UserController - User with username Employer logged in successfully.
+2024-03-03 20:54:46,597 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-03 20:55:18,356 ERROR JobsPortal.Controllers.JobController - PostJob - Error while posting job by UserID: 4. Exception: An error occurred while updating the entries. See the inner exception for details.
+System.Data.Entity.Infrastructure.DbUpdateException: An error occurred while updating the entries. See the inner exception for details. ---> System.Data.Entity.Core.UpdateException: An error occurred while updating the entries. See the inner exception for details. ---> System.Data.SqlClient.SqlException: The INSERT statement conflicted with the FOREIGN KEY constraint "FK_PostJobTable_JobStatusTable". The conflict occurred in database "JobsPortalDb", table "dbo.JobStatusTables", column 'JobStatusID'.
+The statement has been terminated.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.Entity.Infrastructure.Interception.InternalDispatcher`1.Dispatch[TTarget,TInterceptionContext,TResult](TTarget target, Func`3 operation, TInterceptionContext interceptionContext, Action`3 executing, Action`3 executed)
+   at System.Data.Entity.Infrastructure.Interception.DbCommandDispatcher.Reader(DbCommand command, DbCommandInterceptionContext interceptionContext)
+   at System.Data.Entity.Core.Mapping.Update.Internal.DynamicUpdateCommand.Execute(Dictionary`2 identifierValues, List`1 generatedValues)
+   at System.Data.Entity.Core.Mapping.Update.Internal.UpdateTranslator.Update()
+   --- End of inner exception stack trace ---
+   at System.Data.Entity.Core.Mapping.Update.Internal.UpdateTranslator.Update()
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteInTransaction[T](Func`1 func, IDbExecutionStrategy executionStrategy, Boolean startLocalTransaction, Boolean releaseConnectionOnSuccess)
+   at System.Data.Entity.Core.Objects.ObjectContext.SaveChangesToStore(SaveOptions options, IDbExecutionStrategy executionStrategy, Boolean startLocalTransaction)
+   at System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.Execute[TResult](Func`1 operation)
+   at System.Data.Entity.Core.Objects.ObjectContext.SaveChangesInternal(SaveOptions options, Boolean executeInExistingTransaction)
+   at System.Data.Entity.Internal.InternalContext.SaveChanges()
+   --- End of inner exception stack trace ---
+   at System.Data.Entity.Internal.InternalContext.SaveChanges()
+   at JobsPortal.Controllers.JobController.PostJob(PostJobMV postJobMV) in C:\Users\shrey\Downloads\JobsPortal-first-master\JobsPortal-first-master\JobsPortal\Controllers\JobController.cs:line 73
+2024-03-03 20:55:47,213 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-03 20:55:48,958 INFO JobsPortal.Controllers.UserController - User logged out.
+2024-03-03 20:55:48,999 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-03 21:04:39,423 INFO JobsPortal.Controllers.UserController - User with username Employer logged in successfully.
+2024-03-03 21:04:39,529 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-03 21:05:11,660 ERROR JobsPortal.Controllers.JobController - PostJob - Error while posting job by UserID: 4. Exception: An error occurred while updating the entries. See the inner exception for details.
+System.Data.Entity.Infrastructure.DbUpdateException: An error occurred while updating the entries. See the inner exception for details. ---> System.Data.Entity.Core.UpdateException: An error occurred while updating the entries. See the inner exception for details. ---> System.Data.SqlClient.SqlException: The INSERT statement conflicted with the FOREIGN KEY constraint "FK_PostJobTable_JobStatusTable". The conflict occurred in database "JobsPortalDb", table "dbo.JobStatusTables", column 'JobStatusID'.
+The statement has been terminated.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.Entity.Infrastructure.Interception.InternalDispatcher`1.Dispatch[TTarget,TInterceptionContext,TResult](TTarget target, Func`3 operation, TInterceptionContext interceptionContext, Action`3 executing, Action`3 executed)
+   at System.Data.Entity.Infrastructure.Interception.DbCommandDispatcher.Reader(DbCommand command, DbCommandInterceptionContext interceptionContext)
+   at System.Data.Entity.Core.Mapping.Update.Internal.DynamicUpdateCommand.Execute(Dictionary`2 identifierValues, List`1 generatedValues)
+   at System.Data.Entity.Core.Mapping.Update.Internal.UpdateTranslator.Update()
+   --- End of inner exception stack trace ---
+   at System.Data.Entity.Core.Mapping.Update.Internal.UpdateTranslator.Update()
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteInTransaction[T](Func`1 func, IDbExecutionStrategy executionStrategy, Boolean startLocalTransaction, Boolean releaseConnectionOnSuccess)
+   at System.Data.Entity.Core.Objects.ObjectContext.SaveChangesToStore(SaveOptions options, IDbExecutionStrategy executionStrategy, Boolean startLocalTransaction)
+   at System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.Execute[TResult](Func`1 operation)
+   at System.Data.Entity.Core.Objects.ObjectContext.SaveChangesInternal(SaveOptions options, Boolean executeInExistingTransaction)
+   at System.Data.Entity.Internal.InternalContext.SaveChanges()
+   --- End of inner exception stack trace ---
+   at System.Data.Entity.Internal.InternalContext.SaveChanges()
+   at JobsPortal.Controllers.JobController.PostJob(PostJobMV postJobMV) in C:\Users\shrey\Downloads\JobsPortal-first-master\JobsPortal-first-master\JobsPortal\Controllers\JobController.cs:line 73
+2024-03-03 21:12:19,786 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-03 21:13:56,018 WARN JobsPortal.Controllers.UserController - Login failed for username Employer. Incorrect username or password.
+2024-03-03 21:14:18,920 INFO JobsPortal.Controllers.UserController - User with username Employer logged in successfully.
+2024-03-03 21:14:18,957 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-03 21:20:56,765 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-03 22:01:13,775 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-03 22:10:05,285 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-03 22:12:57,308 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-03 22:13:04,819 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-03 22:13:57,604 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-03 22:14:44,002 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's About action.
+2024-03-03 22:14:48,530 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Contact action.
+2024-03-03 22:14:58,265 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-03 22:15:22,045 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-03 22:28:03,563 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-03 22:47:57,477 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-03 23:01:25,810 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-03 23:04:53,332 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-03 23:07:21,077 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-03 23:10:31,092 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-03 23:11:54,688 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-03 23:14:16,408 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-03 23:30:28,226 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-03 23:35:16,564 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-03 23:57:57,117 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-03 23:58:13,655 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-03 23:58:17,774 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-03 23:59:08,468 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-04 00:00:38,533 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-04 00:02:01,334 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-04 00:05:19,971 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-04 00:05:25,001 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-04 00:07:13,497 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-04 00:07:45,850 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-04 00:07:52,991 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-04 00:09:15,838 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-04 00:17:10,676 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-04 00:17:50,790 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-04 00:18:57,773 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-04 00:21:44,981 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-04 00:31:35,838 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-04 00:31:41,669 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-04 00:46:57,659 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-04 00:55:07,315 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-04 00:57:36,578 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-04 00:59:49,299 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-04 01:03:11,306 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-04 01:10:06,328 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-04 01:26:46,432 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-04 01:33:07,636 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-04 01:34:42,224 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-04 01:36:56,717 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-04 01:38:00,647 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-04 01:38:54,720 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-04 01:43:08,982 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-04 01:44:57,585 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-04 01:47:20,450 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-04 01:50:12,260 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-04 01:51:47,052 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-04 01:52:19,576 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-04 01:53:20,841 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-04 01:54:22,315 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-04 01:54:51,069 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-04 01:55:23,031 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-04 01:56:03,609 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-04 01:59:52,228 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-04 02:00:22,766 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's About action.
+2024-03-04 02:00:25,396 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-04 02:01:20,755 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-04 02:04:30,561 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-04 02:15:40,995 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-04 02:16:13,430 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-04 02:17:38,183 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-04 02:19:22,810 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-04 02:19:29,962 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-04 02:40:06,304 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-04 02:41:56,157 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-04 02:43:17,576 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Contact action.
+2024-03-04 02:43:24,960 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's About action.
+2024-03-04 02:43:27,580 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-04 02:43:30,994 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's About action.
+2024-03-04 03:02:46,012 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's About action.
+2024-03-04 03:05:27,880 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's About action.
+2024-03-04 03:05:59,130 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's About action.
+2024-03-04 03:07:15,574 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's About action.
+2024-03-04 03:09:14,587 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's About action.
+2024-03-04 03:09:33,938 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Contact action.
+2024-03-04 03:09:37,858 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's About action.
+2024-03-04 03:09:48,527 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Contact action.
+2024-03-04 03:09:50,608 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-04 03:09:57,446 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Contact action.
+2024-03-04 03:10:16,540 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-04 03:10:18,571 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Contact action.
+2024-03-04 03:10:22,309 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's About action.
+2024-03-04 03:10:31,038 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Contact action.
+2024-03-04 03:12:33,749 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Contact action.
+2024-03-04 03:12:59,848 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Contact action.
+2024-03-04 03:14:10,425 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Contact action.
+2024-03-04 03:14:52,516 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Contact action.
+2024-03-04 03:15:06,922 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's About action.
+2024-03-04 03:15:10,662 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Contact action.
+2024-03-04 03:16:49,326 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Contact action.
+2024-03-04 03:19:29,916 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Contact action.
+2024-03-04 03:19:48,784 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-04 03:19:51,708 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's About action.
+2024-03-04 03:19:54,687 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Contact action.
+2024-03-04 09:55:08,875 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Contact action.
+2024-03-04 09:55:19,522 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-04 09:55:42,636 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-04 09:56:21,096 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's About action.
+2024-03-04 09:56:23,971 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Contact action.
+2024-03-04 09:56:33,605 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-04 09:57:07,562 INFO JobsPortal.Controllers.UserController - User with username Admin logged in successfully.
+2024-03-04 09:57:07,596 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-04 09:57:14,449 INFO JobsPortal.Controllers.JobCategoryTablesController - Accessing JobCategoryTables Index action.
+2024-03-04 09:57:31,569 INFO JobsPortal.Controllers.JobCategoryTablesController - Accessing JobCategoryTables Create action (GET).
+2024-03-04 09:57:44,357 INFO JobsPortal.Controllers.JobCategoryTablesController - Submitting JobCategoryTables Create action (POST).
+2024-03-04 09:57:44,357 DEBUG JobsPortal.Controllers.JobCategoryTablesController - ModelState is valid. Adding new JobCategoryTable to database.
+2024-03-04 09:57:44,873 INFO JobsPortal.Controllers.JobCategoryTablesController - Successfully added new JobCategoryTable. Redirecting to Index action.
+2024-03-04 09:57:44,926 INFO JobsPortal.Controllers.JobCategoryTablesController - Accessing JobCategoryTables Index action.
+2024-03-04 09:57:50,677 INFO JobsPortal.Controllers.JobCategoryTablesController - Accessing JobCategoryTables Edit action (GET) for ID: 3.
+2024-03-04 09:58:01,840 INFO JobsPortal.Controllers.UserController - User logged out.
+2024-03-04 09:58:01,882 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-04 09:58:19,041 INFO JobsPortal.Controllers.UserController - User with username Employer logged in successfully.
+2024-03-04 09:58:19,073 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-04 09:58:55,019 ERROR JobsPortal.Controllers.JobController - PostJob - Error while posting job by UserID: 4. Exception: An error occurred while updating the entries. See the inner exception for details.
+System.Data.Entity.Infrastructure.DbUpdateException: An error occurred while updating the entries. See the inner exception for details. ---> System.Data.Entity.Core.UpdateException: An error occurred while updating the entries. See the inner exception for details. ---> System.Data.SqlClient.SqlException: The INSERT statement conflicted with the FOREIGN KEY constraint "FK_PostJobTable_JobStatusTable". The conflict occurred in database "JobsPortalDb", table "dbo.JobStatusTables", column 'JobStatusID'.
+The statement has been terminated.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.Entity.Infrastructure.Interception.InternalDispatcher`1.Dispatch[TTarget,TInterceptionContext,TResult](TTarget target, Func`3 operation, TInterceptionContext interceptionContext, Action`3 executing, Action`3 executed)
+   at System.Data.Entity.Infrastructure.Interception.DbCommandDispatcher.Reader(DbCommand command, DbCommandInterceptionContext interceptionContext)
+   at System.Data.Entity.Core.Mapping.Update.Internal.DynamicUpdateCommand.Execute(Dictionary`2 identifierValues, List`1 generatedValues)
+   at System.Data.Entity.Core.Mapping.Update.Internal.UpdateTranslator.Update()
+   --- End of inner exception stack trace ---
+   at System.Data.Entity.Core.Mapping.Update.Internal.UpdateTranslator.Update()
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteInTransaction[T](Func`1 func, IDbExecutionStrategy executionStrategy, Boolean startLocalTransaction, Boolean releaseConnectionOnSuccess)
+   at System.Data.Entity.Core.Objects.ObjectContext.SaveChangesToStore(SaveOptions options, IDbExecutionStrategy executionStrategy, Boolean startLocalTransaction)
+   at System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.Execute[TResult](Func`1 operation)
+   at System.Data.Entity.Core.Objects.ObjectContext.SaveChangesInternal(SaveOptions options, Boolean executeInExistingTransaction)
+   at System.Data.Entity.Internal.InternalContext.SaveChanges()
+   --- End of inner exception stack trace ---
+   at System.Data.Entity.Internal.InternalContext.SaveChanges()
+   at JobsPortal.Controllers.JobController.PostJob(PostJobMV postJobMV) in C:\Users\shrey\Downloads\JobsPortal-first-master\JobsPortal-first-master\JobsPortal\Controllers\JobController.cs:line 73
+2024-03-04 10:10:50,483 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-04 10:19:45,995 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-04 10:20:21,858 INFO JobsPortal.Controllers.UserController - User with username Admin logged in successfully.
+2024-03-04 10:20:21,928 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-04 10:20:24,300 INFO JobsPortal.Controllers.UserController - User logged out.
+2024-03-04 10:20:24,348 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-04 10:21:55,807 INFO JobsPortal.Controllers.UserController - New user with username Employer created successfully.
+2024-03-04 10:22:14,245 WARN JobsPortal.Controllers.UserController - Login failed for username Employer. Incorrect username or password.
+2024-03-04 10:22:36,247 INFO JobsPortal.Controllers.UserController - User with username Employer logged in successfully.
+2024-03-04 10:22:36,272 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-04 10:25:44,728 INFO JobsPortal.Controllers.UserController - User logged out.
+2024-03-04 10:25:44,782 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-04 10:26:04,684 INFO JobsPortal.Controllers.UserController - User with username Admin logged in successfully.
+2024-03-04 10:26:04,734 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-04 10:26:08,549 INFO JobsPortal.Controllers.JobCategoryTablesController - Accessing JobCategoryTables Index action.
+2024-03-04 10:26:11,942 INFO JobsPortal.Controllers.JobCategoryTablesController - Accessing JobCategoryTables Create action (GET).
+2024-03-04 10:26:20,715 INFO JobsPortal.Controllers.JobCategoryTablesController - Submitting JobCategoryTables Create action (POST).
+2024-03-04 10:26:20,716 DEBUG JobsPortal.Controllers.JobCategoryTablesController - ModelState is valid. Adding new JobCategoryTable to database.
+2024-03-04 10:26:20,769 INFO JobsPortal.Controllers.JobCategoryTablesController - Successfully added new JobCategoryTable. Redirecting to Index action.
+2024-03-04 10:26:20,821 INFO JobsPortal.Controllers.JobCategoryTablesController - Accessing JobCategoryTables Index action.
+2024-03-04 10:26:23,298 INFO JobsPortal.Controllers.JobCategoryTablesController - Accessing JobCategoryTables Create action (GET).
+2024-03-04 10:26:29,152 INFO JobsPortal.Controllers.JobCategoryTablesController - Submitting JobCategoryTables Create action (POST).
+2024-03-04 10:26:29,152 DEBUG JobsPortal.Controllers.JobCategoryTablesController - ModelState is valid. Adding new JobCategoryTable to database.
+2024-03-04 10:26:29,196 INFO JobsPortal.Controllers.JobCategoryTablesController - Successfully added new JobCategoryTable. Redirecting to Index action.
+2024-03-04 10:26:29,235 INFO JobsPortal.Controllers.JobCategoryTablesController - Accessing JobCategoryTables Index action.
+2024-03-04 10:26:32,105 INFO JobsPortal.Controllers.JobNatureTablesController - Accessing JobNatureTables Index action.
+2024-03-04 10:26:35,013 INFO JobsPortal.Controllers.JobNatureTablesController - Accessing JobNatureTables Create action (GET).
+2024-03-04 10:26:38,923 INFO JobsPortal.Controllers.JobNatureTablesController - Submitting JobNatureTables Create action (POST).
+2024-03-04 10:26:38,923 DEBUG JobsPortal.Controllers.JobNatureTablesController - ModelState is valid. Adding new JobNatureTable to database.
+2024-03-04 10:26:38,977 INFO JobsPortal.Controllers.JobNatureTablesController - Successfully added new JobNatureTable. Redirecting to Index action.
+2024-03-04 10:26:39,030 INFO JobsPortal.Controllers.JobNatureTablesController - Accessing JobNatureTables Index action.
+2024-03-04 10:26:41,336 INFO JobsPortal.Controllers.JobNatureTablesController - Accessing JobNatureTables Create action (GET).
+2024-03-04 10:26:44,941 INFO JobsPortal.Controllers.JobNatureTablesController - Submitting JobNatureTables Create action (POST).
+2024-03-04 10:26:44,941 DEBUG JobsPortal.Controllers.JobNatureTablesController - ModelState is valid. Adding new JobNatureTable to database.
+2024-03-04 10:26:44,970 INFO JobsPortal.Controllers.JobNatureTablesController - Successfully added new JobNatureTable. Redirecting to Index action.
+2024-03-04 10:26:45,009 INFO JobsPortal.Controllers.JobNatureTablesController - Accessing JobNatureTables Index action.
+2024-03-04 10:26:46,711 INFO JobsPortal.Controllers.JobNatureTablesController - Accessing JobNatureTables Create action (GET).
+2024-03-04 10:26:50,567 INFO JobsPortal.Controllers.JobNatureTablesController - Submitting JobNatureTables Create action (POST).
+2024-03-04 10:26:50,567 DEBUG JobsPortal.Controllers.JobNatureTablesController - ModelState is valid. Adding new JobNatureTable to database.
+2024-03-04 10:26:50,619 INFO JobsPortal.Controllers.JobNatureTablesController - Successfully added new JobNatureTable. Redirecting to Index action.
+2024-03-04 10:26:50,665 INFO JobsPortal.Controllers.JobNatureTablesController - Accessing JobNatureTables Index action.
+2024-03-04 10:26:52,518 INFO JobsPortal.Controllers.UserController - User logged out.
+2024-03-04 10:26:52,554 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-04 10:27:10,447 INFO JobsPortal.Controllers.UserController - User with username Employer logged in successfully.
+2024-03-04 10:27:10,485 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-04 10:27:45,295 INFO JobsPortal.Controllers.JobController - PostJob - Successfully posted job by UserId: 7 and CompanyID: 1
+2024-03-04 10:28:05,167 INFO JobsPortal.Controllers.UserController - User logged out.
+2024-03-04 10:28:05,212 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-04 10:28:24,469 WARN JobsPortal.Controllers.UserController - Login failed for username User1. Incorrect username or password.
+2024-03-04 10:28:47,250 WARN JobsPortal.Controllers.UserController - Login failed for username User1. Incorrect username or password.
+2024-03-04 10:29:39,904 INFO JobsPortal.Controllers.UserController - New user with username User1 created successfully.
+2024-03-04 10:30:08,369 INFO JobsPortal.Controllers.UserController - User with username User1 logged in successfully.
+2024-03-04 10:30:08,398 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-04 10:31:08,781 INFO JobsPortal.Controllers.UserController - User logged out.
+2024-03-04 10:31:08,812 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-04 10:31:26,122 INFO JobsPortal.Controllers.UserController - User with username Employer logged in successfully.
+2024-03-04 10:31:26,170 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-04 10:32:15,385 INFO JobsPortal.Controllers.JobController - PostJob - Successfully posted job by UserId: 7 and CompanyID: 1
+2024-03-04 10:32:19,195 INFO JobsPortal.Controllers.UserController - User logged out.
+2024-03-04 10:32:19,241 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-04 10:32:36,534 INFO JobsPortal.Controllers.UserController - User with username Admin logged in successfully.
+2024-03-04 10:32:36,575 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-04 10:32:56,068 INFO JobsPortal.Controllers.UserController - User logged out.
+2024-03-04 10:32:56,103 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-04 10:33:17,234 INFO JobsPortal.Controllers.UserController - User with username User1 logged in successfully.
+2024-03-04 10:33:17,274 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-04 10:36:37,749 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-04 10:37:33,735 INFO JobsPortal.Controllers.UserController - User with username User1 logged in successfully.
+2024-03-04 10:37:33,797 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-04 10:49:05,244 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-04 10:50:05,673 INFO JobsPortal.Controllers.UserController - New user with username User2 created successfully.
+2024-03-04 10:52:14,727 INFO JobsPortal.Controllers.UserController - New user with username User3 created successfully.
+2024-03-04 10:52:35,948 INFO JobsPortal.Controllers.UserController - User with username User3 logged in successfully.
+2024-03-04 10:52:35,997 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-04 10:55:34,781 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-04 10:55:59,250 INFO JobsPortal.Controllers.UserController - User with username User3 logged in successfully.
+2024-03-04 10:55:59,290 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-04 11:04:22,778 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-04 11:06:36,394 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-04 11:07:24,145 INFO JobsPortal.Controllers.UserController - User with username User3 logged in successfully.
+2024-03-04 11:07:24,206 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-04 11:09:44,206 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-04 16:24:41,002 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-04 16:26:29,136 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-04 16:26:33,598 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's About action.
+2024-03-04 16:26:41,638 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Contact action.
+2024-03-04 16:34:29,276 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-04 16:36:32,433 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's About action.
+2024-03-04 16:36:49,941 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Contact action.
+2024-03-04 16:36:57,685 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's About action.
+2024-03-04 16:37:04,391 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Contact action.
+2024-03-04 16:37:48,109 INFO JobsPortal.Controllers.UserController - User with username Admin logged in successfully.
+2024-03-04 16:37:48,174 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-04 16:38:07,701 INFO JobsPortal.Controllers.JobCategoryTablesController - Accessing JobCategoryTables Index action.
+2024-03-04 16:38:20,487 INFO JobsPortal.Controllers.JobNatureTablesController - Accessing JobNatureTables Index action.
+2024-03-04 16:38:53,663 INFO JobsPortal.Controllers.UserController - User logged out.
+2024-03-04 16:38:53,709 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-04 16:39:17,340 INFO JobsPortal.Controllers.UserController - User with username Employer logged in successfully.
+2024-03-04 16:39:17,366 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-04 16:40:49,031 INFO JobsPortal.Controllers.JobController - PostJob - Successfully posted job by UserId: 7 and CompanyID: 1
+2024-03-04 16:41:08,442 INFO JobsPortal.Controllers.UserController - User logged out.
+2024-03-04 16:41:08,492 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-04 16:41:27,191 INFO JobsPortal.Controllers.UserController - User with username Admin logged in successfully.
+2024-03-04 16:41:27,239 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-04 16:41:44,729 INFO JobsPortal.Controllers.UserController - User logged out.
+2024-03-04 16:41:44,775 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-04 16:42:01,332 INFO JobsPortal.Controllers.UserController - User with username User3 logged in successfully.
+2024-03-04 16:42:01,379 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-04 16:47:27,303 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-04 16:47:55,051 INFO JobsPortal.Controllers.UserController - User with username User3 logged in successfully.
+2024-03-04 16:47:55,141 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-04 16:50:05,471 INFO JobsPortal.Controllers.UserController - User logged out.
+2024-03-04 16:50:05,548 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-04 16:58:31,383 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-04 17:00:43,666 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-04 17:02:02,199 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-04 17:03:14,379 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-04 17:03:21,471 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-04 17:05:07,149 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-04 17:05:37,647 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-04 17:10:30,286 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-04 17:12:36,700 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-04 17:17:14,155 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-04 17:23:50,603 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-04 17:29:42,974 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-04 17:33:18,841 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-04 17:35:21,375 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-04 17:37:01,526 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-04 17:37:25,915 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-04 17:41:40,687 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-04 17:42:30,811 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-04 17:45:28,179 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-04 18:07:14,972 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-04 18:07:34,660 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-04 18:29:05,059 INFO JobsPortal.Controllers.UserController - New user with username Suryavamsi created successfully.
+2024-03-04 18:29:33,001 WARN JobsPortal.Controllers.UserController - Login failed for username surya@gmail.com. Incorrect username or password.
+2024-03-04 18:29:44,316 WARN JobsPortal.Controllers.UserController - Login failed for username Surya@gmail.com. Incorrect username or password.
+2024-03-04 18:31:01,258 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-04 20:03:59,639 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-04 20:05:28,997 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's About action.
+2024-03-04 20:05:34,427 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Contact action.
+2024-03-04 20:05:41,607 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-04 20:06:51,416 INFO JobsPortal.Controllers.UserController - User with username User3 logged in successfully.
+2024-03-04 20:06:51,492 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-04 20:08:44,743 INFO JobsPortal.Controllers.UserController - User logged out.
+2024-03-04 20:08:44,788 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-04 20:09:44,064 INFO JobsPortal.Controllers.UserController - New user with username Supriya created successfully.
+2024-03-04 20:10:06,327 INFO JobsPortal.Controllers.UserController - User with username Supriya logged in successfully.
+2024-03-04 20:10:06,389 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-04 20:11:44,268 INFO JobsPortal.Controllers.UserController - User logged out.
+2024-03-04 20:11:44,313 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-04 20:12:05,571 INFO JobsPortal.Controllers.UserController - User with username Admin logged in successfully.
+2024-03-04 20:12:05,619 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-04 20:13:32,527 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-04 20:14:09,683 INFO JobsPortal.Controllers.UserController - User with username Supriya logged in successfully.
+2024-03-04 20:14:09,746 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-04 20:15:50,976 INFO JobsPortal.Controllers.UserController - User logged out.
+2024-03-04 20:15:51,016 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-04 20:16:07,186 INFO JobsPortal.Controllers.UserController - User with username Admin logged in successfully.
+2024-03-04 20:16:07,227 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-04 20:16:40,082 INFO JobsPortal.Controllers.UserController - User logged out.
+2024-03-04 20:16:40,134 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-04 20:16:56,712 INFO JobsPortal.Controllers.UserController - User with username Employer logged in successfully.
+2024-03-04 20:16:56,760 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-04 20:17:29,571 INFO JobsPortal.Controllers.UserController - User logged out.
+2024-03-04 20:17:29,645 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-04 20:18:11,316 INFO JobsPortal.Controllers.UserController - New user with username kiran created successfully.
+2024-03-04 20:18:26,023 INFO JobsPortal.Controllers.UserController - User with username kiran logged in successfully.
+2024-03-04 20:18:26,070 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-04 20:20:02,474 INFO JobsPortal.Controllers.UserController - User logged out.
+2024-03-04 20:20:02,552 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-04 20:20:23,382 INFO JobsPortal.Controllers.UserController - User with username Admin logged in successfully.
+2024-03-04 20:20:23,431 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-04 20:21:31,187 INFO JobsPortal.Controllers.UserController - User logged out.
+2024-03-04 20:21:31,257 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-04 20:24:31,567 INFO JobsPortal.Controllers.UserController - New user with username S.Kiran created successfully.
+2024-03-04 20:24:51,987 INFO JobsPortal.Controllers.UserController - User with username S.Kiran logged in successfully.
+2024-03-04 20:24:52,037 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-04 20:26:26,375 INFO JobsPortal.Controllers.UserController - User logged out.
+2024-03-04 20:26:26,438 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-04 20:26:46,082 INFO JobsPortal.Controllers.UserController - User with username Admin logged in successfully.
+2024-03-04 20:26:46,125 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-04 20:28:16,290 INFO JobsPortal.Controllers.UserController - User logged out.
+2024-03-04 20:28:16,719 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-04 20:28:42,247 INFO JobsPortal.Controllers.UserController - User with username S.Kiran logged in successfully.
+2024-03-04 20:28:42,299 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-05 13:32:03,563 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-05 13:33:05,362 WARN JobsPortal.Controllers.UserController - Login failed for username User3. Incorrect username or password.
+2024-03-05 13:34:13,977 INFO JobsPortal.Controllers.UserController - User with username User1 logged in successfully.
+2024-03-05 13:34:14,047 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-05 13:34:54,346 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-05 13:35:23,660 INFO JobsPortal.Controllers.UserController - User logged out.
+2024-03-05 13:35:23,702 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-05 13:35:41,167 INFO JobsPortal.Controllers.UserController - User with username Admin logged in successfully.
+2024-03-05 13:35:41,209 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-05 13:46:57,654 INFO JobsPortal.Controllers.UserController - User logged out.
+2024-03-05 13:46:57,692 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-05 13:47:17,640 INFO JobsPortal.Controllers.UserController - User with username User3 logged in successfully.
+2024-03-05 13:47:17,665 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-05 13:47:21,796 INFO JobsPortal.Controllers.UserController - User logged out.
+2024-03-05 13:47:21,823 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-05 14:17:22,624 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-05 14:17:46,211 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-05 14:18:25,025 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-05 14:21:11,843 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-05 14:22:35,837 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-05 14:23:43,292 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-05 14:24:21,385 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-05 14:25:49,386 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-05 14:27:08,460 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-05 14:28:09,388 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-05 14:29:12,176 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-05 14:29:38,628 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-05 15:19:31,372 INFO JobsPortal.Controllers.UserController - User with username User1 logged in successfully.
+2024-03-05 15:19:31,433 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-05 15:24:56,874 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-05 15:25:50,924 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-05 15:26:42,765 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-05 15:28:25,550 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-05 15:28:45,807 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Contact action.
+2024-03-05 15:28:49,892 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-05 15:30:12,950 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-05 15:45:30,182 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-05 15:45:57,720 INFO JobsPortal.Controllers.UserController - User with username User1 logged in successfully.
+2024-03-05 15:45:57,841 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-05 15:46:19,776 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-05 16:00:24,188 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-05 16:00:32,633 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-05 16:01:01,215 INFO JobsPortal.Controllers.UserController - User with username User1 logged in successfully.
+2024-03-05 16:01:01,280 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-05 16:02:27,067 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-05 16:02:32,131 INFO JobsPortal.Controllers.UserController - User logged out.
+2024-03-05 16:02:32,184 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-05 16:02:53,196 INFO JobsPortal.Controllers.UserController - User with username User3 logged in successfully.
+2024-03-05 16:02:53,245 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-05 16:03:36,995 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-05 16:03:59,359 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-05 16:04:31,229 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-05 16:04:45,940 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-05 16:13:15,607 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-05 16:13:43,505 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-05 16:14:43,511 INFO JobsPortal.Controllers.UserController - User with username User3 logged in successfully.
+2024-03-05 16:14:43,577 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-05 16:16:51,208 INFO JobsPortal.Controllers.UserController - User with username User1 logged in successfully.
+2024-03-05 16:16:51,237 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-05 16:17:00,889 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-05 16:18:58,357 INFO JobsPortal.Controllers.UserController - User with username User3 logged in successfully.
+2024-03-05 16:18:58,458 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-05 16:23:37,520 INFO JobsPortal.Controllers.UserController - User with username User3 logged in successfully.
+2024-03-05 16:23:37,520 INFO JobsPortal.Controllers.UserController - User with username User3 logged in successfully.
+2024-03-05 16:23:37,652 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-05 16:38:11,830 INFO JobsPortal.Controllers.UserController - User with username User3 logged in successfully.
+2024-03-05 16:38:11,901 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-05 16:38:53,042 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-05 16:39:02,930 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-05 16:39:42,417 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-05 16:41:26,515 INFO JobsPortal.Controllers.UserController - User logged out.
+2024-03-05 16:41:26,562 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-05 16:50:44,081 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-05 17:12:39,464 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-05 17:13:06,742 INFO JobsPortal.Controllers.UserController - User with username User3 logged in successfully.
+2024-03-05 17:13:06,789 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-05 17:17:19,497 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-05 17:42:05,948 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-05 18:12:00,479 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-05 18:13:09,092 INFO JobsPortal.Controllers.UserController - User with username User3 logged in successfully.
+2024-03-05 18:13:09,162 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-05 18:14:33,469 INFO JobsPortal.Controllers.UserController - User logged out.
+2024-03-05 18:14:33,520 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-05 18:17:51,641 INFO JobsPortal.Controllers.UserController - User with username User3 logged in successfully.
+2024-03-05 18:17:51,680 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-05 18:18:18,028 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-05 18:18:52,082 INFO JobsPortal.Controllers.UserController - User logged out.
+2024-03-05 18:18:52,135 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-05 18:20:28,141 INFO JobsPortal.Controllers.UserController - User with username User3 logged in successfully.
+2024-03-05 18:20:28,173 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-05 18:20:50,169 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-05 18:23:55,677 INFO JobsPortal.Controllers.UserController - User logged out.
+2024-03-05 18:23:55,718 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-05 18:24:19,014 INFO JobsPortal.Controllers.UserController - User with username User1 logged in successfully.
+2024-03-05 18:24:19,062 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-05 18:25:40,938 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-05 18:25:50,261 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-05 20:27:15,161 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-05 20:36:05,533 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-05 20:36:50,702 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-05 20:45:10,084 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-05 20:45:20,903 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-05 20:46:53,337 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-05 20:48:58,203 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-05 20:52:29,716 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-05 21:06:51,022 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-05 21:07:46,802 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-05 21:10:08,332 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-05 21:10:49,059 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-05 21:10:57,825 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-05 21:11:01,338 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-05 21:11:03,679 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-05 21:11:06,582 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's About action.
+2024-03-05 21:12:17,115 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-05 21:13:31,842 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-05 21:15:27,670 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-05 21:15:55,110 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-05 21:17:10,675 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-05 21:17:19,806 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's About action.
+2024-03-05 21:19:04,221 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-05 21:19:28,592 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-05 21:19:58,365 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-05 21:20:04,686 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-05 21:20:35,868 INFO JobsPortal.Controllers.UserController - User with username Admin logged in successfully.
+2024-03-05 21:20:35,940 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-05 21:21:50,438 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-05 21:22:12,560 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-05 21:22:58,466 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-05 21:23:36,701 INFO JobsPortal.Controllers.UserController - User with username User3 logged in successfully.
+2024-03-05 21:23:36,752 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-05 21:23:56,300 INFO JobsPortal.Controllers.UserController - User logged out.
+2024-03-05 21:23:56,349 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-05 21:24:15,568 INFO JobsPortal.Controllers.UserController - User with username Employer logged in successfully.
+2024-03-05 21:24:15,614 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-05 21:28:17,818 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-05 21:28:34,947 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-05 21:29:19,766 INFO JobsPortal.Controllers.UserController - User with username Employer logged in successfully.
+2024-03-05 21:29:19,832 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-05 21:29:29,786 INFO JobsPortal.Controllers.UserController - User logged out.
+2024-03-05 21:29:29,827 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-05 21:29:36,098 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Contact action.
+2024-03-05 21:30:00,115 INFO JobsPortal.Controllers.UserController - User with username Admin logged in successfully.
+2024-03-05 21:30:00,155 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-05 21:30:08,568 INFO JobsPortal.Controllers.JobCategoryTablesController - Accessing JobCategoryTables Index action.
+2024-03-05 21:30:21,490 INFO JobsPortal.Controllers.UserController - User logged out.
+2024-03-05 21:30:21,538 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-05 21:30:36,659 INFO JobsPortal.Controllers.UserController - User with username User3 logged in successfully.
+2024-03-05 21:30:36,706 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-05 21:34:36,544 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-05 21:37:19,617 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-05 21:37:51,977 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-05 21:38:11,085 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-05 21:38:26,054 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-05 21:38:33,801 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-05 21:38:52,509 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-05 21:40:03,317 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-05 21:40:28,979 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-05 21:40:59,679 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-05 21:41:06,296 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-05 21:41:06,741 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-05 21:41:42,460 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-05 21:41:50,528 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-05 21:42:11,153 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-05 21:42:27,601 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-05 21:42:34,056 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-05 21:43:34,568 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-05 21:44:51,579 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-05 21:46:04,567 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-05 21:46:13,800 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-05 21:46:36,119 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-05 21:47:10,897 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-05 21:47:48,752 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-05 21:53:00,351 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-05 21:53:43,699 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-05 21:53:50,288 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-05 21:53:54,285 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-05 21:55:38,134 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-05 21:56:30,695 INFO JobsPortal.Controllers.UserController - User with username User3 logged in successfully.
+2024-03-05 21:56:30,763 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-05 21:56:40,061 INFO JobsPortal.Controllers.UserController - User logged out.
+2024-03-05 21:56:40,111 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-05 22:01:01,189 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Contact action.
+2024-03-05 22:01:27,297 INFO JobsPortal.Controllers.UserController - User with username Employer logged in successfully.
+2024-03-05 22:01:27,337 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-05 22:02:04,666 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's About action.
+2024-03-05 22:02:25,084 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Contact action.
+2024-03-05 22:02:36,547 INFO JobsPortal.Controllers.UserController - User logged out.
+2024-03-05 22:02:36,599 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-05 22:02:54,263 INFO JobsPortal.Controllers.UserController - User with username User3 logged in successfully.
+2024-03-05 22:02:54,312 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-05 22:03:07,177 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's About action.
+2024-03-05 22:03:09,526 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Contact action.
+2024-03-05 22:03:25,858 INFO JobsPortal.Controllers.UserController - User logged out.
+2024-03-05 22:03:25,907 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-05 22:03:49,189 INFO JobsPortal.Controllers.UserController - User with username Admin logged in successfully.
+2024-03-05 22:03:49,229 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-05 22:04:02,184 INFO JobsPortal.Controllers.JobCategoryTablesController - Accessing JobCategoryTables Index action.
+2024-03-05 22:04:07,315 INFO JobsPortal.Controllers.JobNatureTablesController - Accessing JobNatureTables Index action.
+2024-03-05 22:04:18,035 INFO JobsPortal.Controllers.UserController - User logged out.
+2024-03-05 22:04:18,078 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-05 22:05:56,948 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-05 22:06:20,031 INFO JobsPortal.Controllers.UserController - User with username Employer logged in successfully.
+2024-03-05 22:06:20,031 INFO JobsPortal.Controllers.UserController - User with username Employer logged in successfully.
+2024-03-05 22:06:20,082 INFO JobsPortal.Controllers.UserController - User with username Employer logged in successfully.
+2024-03-05 22:06:20,177 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-05 22:09:06,732 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-05 22:09:28,639 INFO JobsPortal.Controllers.UserController - User with username Employer logged in successfully.
+2024-03-05 22:09:28,717 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-05 22:10:17,548 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-05 22:10:38,452 INFO JobsPortal.Controllers.UserController - User with username Employer logged in successfully.
+2024-03-05 22:10:38,512 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-05 22:17:30,928 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-05 22:17:59,267 INFO JobsPortal.Controllers.UserController - User with username Employer logged in successfully.
+2024-03-05 22:17:59,305 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-05 22:18:10,499 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's About action.
+2024-03-05 22:18:18,847 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Contact action.
+2024-03-05 22:18:21,617 INFO JobsPortal.Controllers.UserController - User logged out.
+2024-03-05 22:18:21,657 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-05 22:23:38,503 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-05 22:24:34,811 WARN JobsPortal.Controllers.UserController - Login failed for username Admin. Incorrect username or password.
+2024-03-05 22:25:24,115 INFO JobsPortal.Controllers.UserController - User with username Admin logged in successfully.
+2024-03-05 22:25:24,201 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-05 22:25:31,723 INFO JobsPortal.Controllers.JobNatureTablesController - Accessing JobNatureTables Index action.
+2024-03-05 22:31:10,570 INFO JobsPortal.Controllers.JobNatureTablesController - Accessing JobNatureTables Create action (GET).
+2024-03-05 22:32:06,000 INFO JobsPortal.Controllers.UserController - User with username Admin logged in successfully.
+2024-03-05 22:32:06,047 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-05 22:32:55,047 INFO JobsPortal.Controllers.UserController - User logged out.
+2024-03-05 22:32:55,092 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-05 22:33:11,103 INFO JobsPortal.Controllers.UserController - User with username Admin logged in successfully.
+2024-03-05 22:33:11,157 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-05 22:33:14,699 INFO JobsPortal.Controllers.JobCategoryTablesController - Accessing JobCategoryTables Index action.
+2024-03-05 22:35:48,935 INFO JobsPortal.Controllers.JobNatureTablesController - Accessing JobNatureTables Index action.
+2024-03-05 22:36:08,951 INFO JobsPortal.Controllers.UserController - User with username Admin logged in successfully.
+2024-03-05 22:36:09,002 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-05 22:36:17,729 INFO JobsPortal.Controllers.JobCategoryTablesController - Accessing JobCategoryTables Index action.
+2024-03-05 22:36:26,266 INFO JobsPortal.Controllers.JobNatureTablesController - Accessing JobNatureTables Index action.
+2024-03-05 22:37:06,460 INFO JobsPortal.Controllers.JobNatureTablesController - Accessing JobNatureTables Index action.
+2024-03-05 22:37:30,142 INFO JobsPortal.Controllers.UserController - User with username Admin logged in successfully.
+2024-03-05 22:37:30,199 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-05 22:37:34,092 INFO JobsPortal.Controllers.JobCategoryTablesController - Accessing JobCategoryTables Index action.
+2024-03-05 22:37:38,881 INFO JobsPortal.Controllers.JobNatureTablesController - Accessing JobNatureTables Index action.
+2024-03-05 22:39:20,872 INFO JobsPortal.Controllers.JobNatureTablesController - Accessing JobNatureTables Index action.
+2024-03-05 22:39:41,852 INFO JobsPortal.Controllers.UserController - User with username Admin logged in successfully.
+2024-03-05 22:39:41,892 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-05 22:39:45,603 INFO JobsPortal.Controllers.JobNatureTablesController - Accessing JobNatureTables Index action.
+2024-03-05 22:42:32,671 INFO JobsPortal.Controllers.JobNatureTablesController - Accessing JobNatureTables Index action.
+2024-03-05 22:45:37,504 INFO JobsPortal.Controllers.JobNatureTablesController - Accessing JobNatureTables Index action.
+2024-03-05 22:45:57,587 INFO JobsPortal.Controllers.UserController - User with username Admin logged in successfully.
+2024-03-05 22:45:57,707 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-05 22:46:01,775 INFO JobsPortal.Controllers.JobNatureTablesController - Accessing JobNatureTables Index action.
+2024-03-05 22:46:06,737 INFO JobsPortal.Controllers.JobCategoryTablesController - Accessing JobCategoryTables Index action.
+2024-03-05 22:46:25,479 INFO JobsPortal.Controllers.UserController - User logged out.
+2024-03-05 22:46:25,529 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-05 22:46:41,838 INFO JobsPortal.Controllers.UserController - User with username Employer logged in successfully.
+2024-03-05 22:46:41,887 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-05 22:46:58,633 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's About action.
+2024-03-05 22:47:37,981 INFO JobsPortal.Controllers.JobController - PostJob - Successfully posted job by UserId: 7 and CompanyID: 1
+2024-03-05 22:47:54,038 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Contact action.
+2024-03-05 22:48:09,144 INFO JobsPortal.Controllers.UserController - User logged out.
+2024-03-05 22:48:09,198 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-05 22:48:30,576 WARN JobsPortal.Controllers.UserController - Login failed for username Job Seeker. Incorrect username or password.
+2024-03-05 22:48:43,987 WARN JobsPortal.Controllers.UserController - Login failed for username Job Seeker. Incorrect username or password.
+2024-03-05 22:48:59,428 WARN JobsPortal.Controllers.UserController - Login failed for username Job Seeker. Incorrect username or password.
+2024-03-05 22:49:08,752 WARN JobsPortal.Controllers.UserController - Login failed for username JobSeeker. Incorrect username or password.
+2024-03-05 22:49:32,805 INFO JobsPortal.Controllers.UserController - User with username User3 logged in successfully.
+2024-03-05 22:49:32,872 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-05 22:49:47,311 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's About action.
+2024-03-05 22:49:49,549 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Contact action.
+2024-03-05 22:49:52,157 INFO JobsPortal.Controllers.UserController - User logged out.
+2024-03-05 22:49:52,227 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-05 22:50:07,811 INFO JobsPortal.Controllers.UserController - User with username Admin logged in successfully.
+2024-03-05 22:50:07,861 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-05 22:50:17,955 INFO JobsPortal.Controllers.UserController - User logged out.
+2024-03-05 22:50:17,990 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-05 22:50:34,750 INFO JobsPortal.Controllers.UserController - User with username User3 logged in successfully.
+2024-03-05 22:50:34,797 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-05 22:56:55,020 INFO JobsPortal.Controllers.JobCategoryTablesController - Accessing JobCategoryTables Create action (GET).
+2024-03-05 22:57:17,884 INFO JobsPortal.Controllers.UserController - User with username Admin logged in successfully.
+2024-03-05 22:57:17,944 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-05 22:57:21,371 INFO JobsPortal.Controllers.JobNatureTablesController - Accessing JobNatureTables Index action.
+2024-03-05 22:57:24,693 INFO JobsPortal.Controllers.JobCategoryTablesController - Accessing JobCategoryTables Index action.
+2024-03-05 23:00:51,220 INFO JobsPortal.Controllers.JobCategoryTablesController - Accessing JobCategoryTables Index action.
+2024-03-05 23:01:12,903 INFO JobsPortal.Controllers.UserController - User with username Admin logged in successfully.
+2024-03-05 23:01:12,957 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-05 23:01:16,001 INFO JobsPortal.Controllers.JobNatureTablesController - Accessing JobNatureTables Index action.
+2024-03-05 23:01:21,813 INFO JobsPortal.Controllers.JobCategoryTablesController - Accessing JobCategoryTables Index action.
+2024-03-05 23:01:26,697 INFO JobsPortal.Controllers.JobCategoryTablesController - Accessing JobCategoryTables Index action.
+2024-03-05 23:01:30,305 INFO JobsPortal.Controllers.JobNatureTablesController - Accessing JobNatureTables Index action.
+2024-03-05 23:13:35,190 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-05 23:14:23,046 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-05 23:21:44,914 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-05 23:40:57,939 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-05 23:41:53,568 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-05 23:43:25,118 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-05 23:43:34,705 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-09 10:58:02,245 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-09 11:01:03,613 INFO JobsPortal.Controllers.UserController - New user with username RashmiPriya created successfully.
+2024-03-09 11:02:08,524 INFO JobsPortal.Controllers.UserController - User with username RashmiPriya logged in successfully.
+2024-03-09 11:02:08,552 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-09 11:04:05,895 INFO JobsPortal.Controllers.JobController - PostJob - Successfully posted job by UserId: 4 and CompanyID: 1
+2024-03-09 11:06:07,674 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-09 11:06:37,182 INFO JobsPortal.Controllers.UserController - User with username RashmiPriya logged in successfully.
+2024-03-09 11:06:37,229 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-09 11:07:37,834 INFO JobsPortal.Controllers.JobController - PostJob - Successfully posted job by UserId: 4 and CompanyID: 1
+2024-03-09 11:12:16,687 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-09 11:12:47,051 WARN JobsPortal.Controllers.UserController - Login failed for username Priya Rai. Incorrect username or password.
+2024-03-09 11:13:09,432 WARN JobsPortal.Controllers.UserController - Login failed for username Rashmi. Incorrect username or password.
+2024-03-09 11:14:06,196 INFO JobsPortal.Controllers.UserController - User with username JobSeeker logged in successfully.
+2024-03-09 11:14:06,231 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-09 11:14:22,672 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-09 11:25:52,483 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-09 11:26:22,321 WARN JobsPortal.Controllers.UserController - Login failed for username Rashmi Priya. Incorrect username or password.
+2024-03-09 11:26:36,202 INFO JobsPortal.Controllers.UserController - User with username RashmiPriya logged in successfully.
+2024-03-09 11:26:36,265 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-09 11:26:41,985 INFO JobsPortal.Controllers.UserController - User logged out.
+2024-03-09 11:26:42,018 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-09 13:19:27,369 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-09 16:23:58,314 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-09 16:24:17,073 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-09 16:24:45,304 INFO JobsPortal.Controllers.UserController - User with username Admin logged in successfully.
+2024-03-09 16:24:45,369 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-09 16:34:54,813 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-09 16:35:42,161 INFO JobsPortal.Controllers.UserController - User with username RashmiPriya logged in successfully.
+2024-03-09 16:35:42,219 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-09 16:36:02,084 INFO JobsPortal.Controllers.JobController - PostJob - Successfully posted job by UserId: 4 and CompanyID: 1
+2024-03-09 16:36:43,894 INFO JobsPortal.Controllers.UserController - User logged out.
+2024-03-09 16:36:43,936 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-09 16:37:03,244 INFO JobsPortal.Controllers.UserController - User with username Admin logged in successfully.
+2024-03-09 16:37:03,288 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-09 16:44:28,839 INFO JobsPortal.Controllers.UserController - User logged out.
+2024-03-09 16:44:28,884 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-09 16:44:59,677 INFO JobsPortal.Controllers.UserController - User with username RashmiPriya logged in successfully.
+2024-03-09 16:44:59,724 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-09 17:57:22,631 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-09 18:25:08,763 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-10 06:56:54,088 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-10 06:57:31,501 INFO JobsPortal.Controllers.UserController - User with username Admin logged in successfully.
+2024-03-10 06:57:31,537 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-10 06:57:34,584 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-10 06:57:57,317 INFO JobsPortal.Controllers.UserController - User with username Admin logged in successfully.
+2024-03-10 06:57:57,336 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-10 06:58:00,409 INFO JobsPortal.Controllers.JobCategoryTablesController - Accessing JobCategoryTables Index action.
+2024-03-10 06:59:45,318 INFO JobsPortal.Controllers.JobCategoryTablesController - Accessing JobCategoryTables Create action (GET).
+2024-03-10 07:01:39,535 INFO JobsPortal.Controllers.JobCategoryTablesController - Submitting JobCategoryTables Create action (POST).
+2024-03-10 07:01:39,536 DEBUG JobsPortal.Controllers.JobCategoryTablesController - ModelState is valid. Adding new JobCategoryTable to database.
+2024-03-10 07:01:39,786 INFO JobsPortal.Controllers.JobCategoryTablesController - Successfully added new JobCategoryTable. Redirecting to Index action.
+2024-03-10 07:01:39,828 INFO JobsPortal.Controllers.JobCategoryTablesController - Accessing JobCategoryTables Index action.
+2024-03-10 07:01:43,306 INFO JobsPortal.Controllers.JobCategoryTablesController - Accessing JobCategoryTables Create action (GET).
+2024-03-10 07:03:16,450 INFO JobsPortal.Controllers.JobCategoryTablesController - Submitting JobCategoryTables Create action (POST).
+2024-03-10 07:03:16,450 DEBUG JobsPortal.Controllers.JobCategoryTablesController - ModelState is valid. Adding new JobCategoryTable to database.
+2024-03-10 07:03:16,468 INFO JobsPortal.Controllers.JobCategoryTablesController - Successfully added new JobCategoryTable. Redirecting to Index action.
+2024-03-10 07:03:16,487 INFO JobsPortal.Controllers.JobCategoryTablesController - Accessing JobCategoryTables Index action.
+2024-03-10 07:03:21,595 INFO JobsPortal.Controllers.JobCategoryTablesController - Accessing JobCategoryTables Create action (GET).
+2024-03-10 07:04:37,993 INFO JobsPortal.Controllers.JobCategoryTablesController - Submitting JobCategoryTables Create action (POST).
+2024-03-10 07:04:37,993 DEBUG JobsPortal.Controllers.JobCategoryTablesController - ModelState is valid. Adding new JobCategoryTable to database.
+2024-03-10 07:04:38,018 INFO JobsPortal.Controllers.JobCategoryTablesController - Successfully added new JobCategoryTable. Redirecting to Index action.
+2024-03-10 07:04:38,034 INFO JobsPortal.Controllers.JobCategoryTablesController - Accessing JobCategoryTables Index action.
+2024-03-10 07:05:01,065 INFO JobsPortal.Controllers.JobCategoryTablesController - Accessing JobCategoryTables Edit action (GET) for ID: 1.
+2024-03-10 07:05:18,017 INFO JobsPortal.Controllers.JobCategoryTablesController - Submitting JobCategoryTables Edit action (POST) for ID: 1.
+2024-03-10 07:05:18,017 DEBUG JobsPortal.Controllers.JobCategoryTablesController - ModelState is valid. Modifying JobCategoryTable in database.
+2024-03-10 07:05:18,050 INFO JobsPortal.Controllers.JobCategoryTablesController - Successfully modified JobCategoryTable with ID: 1. Redirecting to Index action.
+2024-03-10 07:05:18,077 INFO JobsPortal.Controllers.JobCategoryTablesController - Accessing JobCategoryTables Index action.
+2024-03-10 07:05:21,238 INFO JobsPortal.Controllers.JobCategoryTablesController - Accessing JobCategoryTables Edit action (GET) for ID: 2.
+2024-03-10 07:05:58,722 INFO JobsPortal.Controllers.JobCategoryTablesController - Submitting JobCategoryTables Edit action (POST) for ID: 2.
+2024-03-10 07:05:58,722 DEBUG JobsPortal.Controllers.JobCategoryTablesController - ModelState is valid. Modifying JobCategoryTable in database.
+2024-03-10 07:05:58,741 INFO JobsPortal.Controllers.JobCategoryTablesController - Successfully modified JobCategoryTable with ID: 2. Redirecting to Index action.
+2024-03-10 07:05:58,751 INFO JobsPortal.Controllers.JobCategoryTablesController - Accessing JobCategoryTables Index action.
+2024-03-10 07:06:04,890 INFO JobsPortal.Controllers.JobNatureTablesController - Accessing JobNatureTables Index action.
+2024-03-10 07:06:17,591 INFO JobsPortal.Controllers.JobNatureTablesController - Accessing JobNatureTables Create action (GET).
+2024-03-10 07:06:24,184 INFO JobsPortal.Controllers.JobNatureTablesController - Submitting JobNatureTables Create action (POST).
+2024-03-10 07:06:24,184 DEBUG JobsPortal.Controllers.JobNatureTablesController - ModelState is valid. Adding new JobNatureTable to database.
+2024-03-10 07:06:24,204 INFO JobsPortal.Controllers.JobNatureTablesController - Successfully added new JobNatureTable. Redirecting to Index action.
+2024-03-10 07:06:24,233 INFO JobsPortal.Controllers.JobNatureTablesController - Accessing JobNatureTables Index action.
+2024-03-10 07:06:26,129 INFO JobsPortal.Controllers.JobNatureTablesController - Accessing JobNatureTables Create action (GET).
+2024-03-10 07:06:31,768 INFO JobsPortal.Controllers.JobNatureTablesController - Submitting JobNatureTables Create action (POST).
+2024-03-10 07:06:31,768 DEBUG JobsPortal.Controllers.JobNatureTablesController - ModelState is valid. Adding new JobNatureTable to database.
+2024-03-10 07:06:31,785 INFO JobsPortal.Controllers.JobNatureTablesController - Successfully added new JobNatureTable. Redirecting to Index action.
+2024-03-10 07:06:31,803 INFO JobsPortal.Controllers.JobNatureTablesController - Accessing JobNatureTables Index action.
+2024-03-10 07:06:33,579 INFO JobsPortal.Controllers.JobNatureTablesController - Accessing JobNatureTables Create action (GET).
+2024-03-10 07:06:43,261 INFO JobsPortal.Controllers.JobNatureTablesController - Submitting JobNatureTables Create action (POST).
+2024-03-10 07:06:43,261 DEBUG JobsPortal.Controllers.JobNatureTablesController - ModelState is valid. Adding new JobNatureTable to database.
+2024-03-10 07:06:43,286 INFO JobsPortal.Controllers.JobNatureTablesController - Successfully added new JobNatureTable. Redirecting to Index action.
+2024-03-10 07:06:43,301 INFO JobsPortal.Controllers.JobNatureTablesController - Accessing JobNatureTables Index action.
+2024-03-10 07:27:43,714 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-10 07:28:40,290 INFO JobsPortal.Controllers.UserController - User with username Admin logged in successfully.
+2024-03-10 07:28:40,306 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-10 07:51:18,033 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-10 07:51:48,268 INFO JobsPortal.Controllers.UserController - User with username RashmiPriya logged in successfully.
+2024-03-10 07:51:48,292 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-10 08:13:02,865 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-10 08:13:30,681 INFO JobsPortal.Controllers.UserController - User with username Admin logged in successfully.
+2024-03-10 08:13:30,696 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-10 08:15:35,963 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-10 08:15:55,750 INFO JobsPortal.Controllers.UserController - User with username Admin logged in successfully.
+2024-03-10 08:15:55,763 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-10 08:17:47,431 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-10 08:18:06,598 INFO JobsPortal.Controllers.UserController - User with username Admin logged in successfully.
+2024-03-10 08:18:06,647 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-10 08:22:40,643 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-10 08:23:05,459 INFO JobsPortal.Controllers.UserController - User with username RashmiPriya logged in successfully.
+2024-03-10 08:23:05,484 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-10 08:24:25,339 INFO JobsPortal.Controllers.UserController - User logged out.
+2024-03-10 08:24:25,349 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-10 08:24:46,917 INFO JobsPortal.Controllers.UserController - User with username JobSeeker logged in successfully.
+2024-03-10 08:24:46,933 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-10 08:33:01,858 INFO JobsPortal.Controllers.UserController - User logged out.
+2024-03-10 08:33:01,867 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-10 08:33:24,517 INFO JobsPortal.Controllers.UserController - User with username RashmiPriya logged in successfully.
+2024-03-10 08:33:24,534 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-10 08:34:54,542 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-10 11:28:50,498 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-10 12:53:05,337 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-10 12:53:35,829 INFO JobsPortal.Controllers.UserController - User with username Admin logged in successfully.
+2024-03-10 12:53:35,892 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-10 13:05:44,005 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-10 13:13:06,017 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-10 13:13:27,738 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-10 13:13:55,485 INFO JobsPortal.Controllers.UserController - User with username Admin logged in successfully.
+2024-03-10 13:13:55,545 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-10 13:19:36,983 INFO JobsPortal.Controllers.UserController - User logged out.
+2024-03-10 13:19:37,018 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-10 13:20:07,701 INFO JobsPortal.Controllers.UserController - User with username RashmiPriya logged in successfully.
+2024-03-10 13:20:07,750 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-10 13:23:14,114 INFO JobsPortal.Controllers.UserController - User logged out.
+2024-03-10 13:23:14,159 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-10 13:23:34,294 INFO JobsPortal.Controllers.UserController - User with username JobSeeker logged in successfully.
+2024-03-10 13:23:34,341 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-10 17:30:35,410 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-10 17:31:03,092 INFO JobsPortal.Controllers.UserController - User with username Admin logged in successfully.
+2024-03-10 17:31:03,155 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-10 17:50:15,107 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-10 17:50:39,830 INFO JobsPortal.Controllers.UserController - User with username Admin logged in successfully.
+2024-03-10 17:50:39,892 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-10 20:25:52,624 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-10 20:26:29,616 INFO JobsPortal.Controllers.UserController - User with username Admin logged in successfully.
+2024-03-10 20:26:29,678 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-10 20:26:57,092 INFO JobsPortal.Controllers.UserController - User logged out.
+2024-03-10 20:26:57,127 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-10 20:27:25,624 INFO JobsPortal.Controllers.UserController - User with username JobSeeker logged in successfully.
+2024-03-10 20:27:25,671 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-10 20:28:33,684 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-10 20:29:23,278 WARN JobsPortal.Controllers.UserController - Email is not registered. Email typed: priye98priya@gmail.com.
+2024-03-10 20:29:39,274 WARN JobsPortal.Controllers.UserController - Email is not registered. Email typed: priyarashmi@gmail.com.
+2024-03-11 13:59:49,408 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-11 14:00:17,720 WARN JobsPortal.Controllers.UserController - Login failed for username Admin. Incorrect username or password.
+2024-03-11 14:04:27,310 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-11 14:07:34,494 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-11 14:08:01,590 INFO JobsPortal.Controllers.UserController - User with username Admin logged in successfully.
+2024-03-11 14:08:01,652 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-11 14:08:09,445 INFO JobsPortal.Controllers.JobCategoryTablesController - Accessing JobCategoryTables Index action.
+2024-03-11 14:08:20,501 INFO JobsPortal.Controllers.JobCategoryTablesController - Accessing JobCategoryTables Index action.
+2024-03-11 14:08:22,348 INFO JobsPortal.Controllers.JobCategoryTablesController - Accessing JobCategoryTables Create action (GET).
+2024-03-11 14:08:41,690 INFO JobsPortal.Controllers.JobCategoryTablesController - Submitting JobCategoryTables Create action (POST).
+2024-03-11 14:08:41,691 DEBUG JobsPortal.Controllers.JobCategoryTablesController - ModelState is valid. Adding new JobCategoryTable to database.
+2024-03-11 14:08:42,282 INFO JobsPortal.Controllers.JobCategoryTablesController - Successfully added new JobCategoryTable. Redirecting to Index action.
+2024-03-11 14:08:42,332 INFO JobsPortal.Controllers.JobCategoryTablesController - Accessing JobCategoryTables Index action.
+2024-03-11 14:08:44,722 INFO JobsPortal.Controllers.JobCategoryTablesController - Accessing JobCategoryTables Create action (GET).
+2024-03-11 14:08:58,443 INFO JobsPortal.Controllers.JobCategoryTablesController - Submitting JobCategoryTables Create action (POST).
+2024-03-11 14:08:58,443 DEBUG JobsPortal.Controllers.JobCategoryTablesController - ModelState is valid. Adding new JobCategoryTable to database.
+2024-03-11 14:08:58,486 INFO JobsPortal.Controllers.JobCategoryTablesController - Successfully added new JobCategoryTable. Redirecting to Index action.
+2024-03-11 14:08:58,529 INFO JobsPortal.Controllers.JobCategoryTablesController - Accessing JobCategoryTables Index action.
+2024-03-11 14:09:01,268 INFO JobsPortal.Controllers.JobNatureTablesController - Accessing JobNatureTables Index action.
+2024-03-11 14:09:04,319 INFO JobsPortal.Controllers.JobNatureTablesController - Accessing JobNatureTables Create action (GET).
+2024-03-11 14:09:10,895 INFO JobsPortal.Controllers.JobNatureTablesController - Submitting JobNatureTables Create action (POST).
+2024-03-11 14:09:10,895 DEBUG JobsPortal.Controllers.JobNatureTablesController - ModelState is valid. Adding new JobNatureTable to database.
+2024-03-11 14:09:10,952 INFO JobsPortal.Controllers.JobNatureTablesController - Successfully added new JobNatureTable. Redirecting to Index action.
+2024-03-11 14:09:10,999 INFO JobsPortal.Controllers.JobNatureTablesController - Accessing JobNatureTables Index action.
+2024-03-11 14:09:13,524 INFO JobsPortal.Controllers.JobNatureTablesController - Accessing JobNatureTables Create action (GET).
+2024-03-11 14:09:21,444 INFO JobsPortal.Controllers.JobNatureTablesController - Submitting JobNatureTables Create action (POST).
+2024-03-11 14:09:21,444 DEBUG JobsPortal.Controllers.JobNatureTablesController - ModelState is valid. Adding new JobNatureTable to database.
+2024-03-11 14:09:21,490 INFO JobsPortal.Controllers.JobNatureTablesController - Successfully added new JobNatureTable. Redirecting to Index action.
+2024-03-11 14:09:21,540 INFO JobsPortal.Controllers.JobNatureTablesController - Accessing JobNatureTables Index action.
+2024-03-11 14:09:32,522 INFO JobsPortal.Controllers.UserController - User logged out.
+2024-03-11 14:09:32,562 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-11 14:10:01,547 WARN JobsPortal.Controllers.UserController - Login failed for username Employee. Incorrect username or password.
+2024-03-11 14:12:27,521 INFO JobsPortal.Controllers.UserController - New user with username RashmiPriya created successfully.
+2024-03-11 14:12:45,768 INFO JobsPortal.Controllers.UserController - User with username RashmiPriya logged in successfully.
+2024-03-11 14:12:45,815 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-11 14:12:53,129 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's About action.
+2024-03-11 14:12:55,821 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Contact action.
+2024-03-11 14:13:19,919 ERROR JobsPortal.Controllers.JobController - PostJob - Error while posting job by UserID: 7. Exception: An error occurred while updating the entries. See the inner exception for details.
+System.Data.Entity.Infrastructure.DbUpdateException: An error occurred while updating the entries. See the inner exception for details. ---> System.Data.Entity.Core.UpdateException: An error occurred while updating the entries. See the inner exception for details. ---> System.Data.SqlClient.SqlException: The INSERT statement conflicted with the FOREIGN KEY constraint "FK_PostJobTable_JobStatusTable". The conflict occurred in database "JobsPortalDb", table "dbo.JobStatusTables", column 'JobStatusID'.
+The statement has been terminated.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.Entity.Infrastructure.Interception.InternalDispatcher`1.Dispatch[TTarget,TInterceptionContext,TResult](TTarget target, Func`3 operation, TInterceptionContext interceptionContext, Action`3 executing, Action`3 executed)
+   at System.Data.Entity.Infrastructure.Interception.DbCommandDispatcher.Reader(DbCommand command, DbCommandInterceptionContext interceptionContext)
+   at System.Data.Entity.Core.Mapping.Update.Internal.DynamicUpdateCommand.Execute(Dictionary`2 identifierValues, List`1 generatedValues)
+   at System.Data.Entity.Core.Mapping.Update.Internal.UpdateTranslator.Update()
+   --- End of inner exception stack trace ---
+   at System.Data.Entity.Core.Mapping.Update.Internal.UpdateTranslator.Update()
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteInTransaction[T](Func`1 func, IDbExecutionStrategy executionStrategy, Boolean startLocalTransaction, Boolean releaseConnectionOnSuccess)
+   at System.Data.Entity.Core.Objects.ObjectContext.SaveChangesToStore(SaveOptions options, IDbExecutionStrategy executionStrategy, Boolean startLocalTransaction)
+   at System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.Execute[TResult](Func`1 operation)
+   at System.Data.Entity.Core.Objects.ObjectContext.SaveChangesInternal(SaveOptions options, Boolean executeInExistingTransaction)
+   at System.Data.Entity.Internal.InternalContext.SaveChanges()
+   --- End of inner exception stack trace ---
+   at System.Data.Entity.Internal.InternalContext.SaveChanges()
+   at JobsPortal.Controllers.JobController.PostJob(PostJobMV postJobMV) in E:\JobApp\JobsPortal-first-master\JobsPortal\Controllers\JobController.cs:line 73
+2024-03-11 14:31:06,824 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-11 14:38:35,106 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-11 14:39:07,383 INFO JobsPortal.Controllers.UserController - User with username Admin logged in successfully.
+2024-03-11 14:39:07,440 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-11 14:39:35,607 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-11 14:40:40,458 INFO JobsPortal.Controllers.UserController - User logged out.
+2024-03-11 14:40:40,500 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-11 14:42:56,284 INFO JobsPortal.Controllers.UserController - New user with username Rashmi created successfully.
+2024-03-11 14:43:38,298 INFO JobsPortal.Controllers.UserController - User with username Rashmi logged in successfully.
+2024-03-11 14:43:38,337 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-11 14:44:51,302 ERROR JobsPortal.Controllers.JobController - PostJob - Error while posting job by UserID: 8. Exception: An error occurred while updating the entries. See the inner exception for details.
+System.Data.Entity.Infrastructure.DbUpdateException: An error occurred while updating the entries. See the inner exception for details. ---> System.Data.Entity.Core.UpdateException: An error occurred while updating the entries. See the inner exception for details. ---> System.Data.SqlClient.SqlException: The INSERT statement conflicted with the FOREIGN KEY constraint "FK_PostJobTable_JobStatusTable". The conflict occurred in database "JobsPortalDb", table "dbo.JobStatusTables", column 'JobStatusID'.
+The statement has been terminated.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.Entity.Infrastructure.Interception.InternalDispatcher`1.Dispatch[TTarget,TInterceptionContext,TResult](TTarget target, Func`3 operation, TInterceptionContext interceptionContext, Action`3 executing, Action`3 executed)
+   at System.Data.Entity.Infrastructure.Interception.DbCommandDispatcher.Reader(DbCommand command, DbCommandInterceptionContext interceptionContext)
+   at System.Data.Entity.Core.Mapping.Update.Internal.DynamicUpdateCommand.Execute(Dictionary`2 identifierValues, List`1 generatedValues)
+   at System.Data.Entity.Core.Mapping.Update.Internal.UpdateTranslator.Update()
+   --- End of inner exception stack trace ---
+   at System.Data.Entity.Core.Mapping.Update.Internal.UpdateTranslator.Update()
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteInTransaction[T](Func`1 func, IDbExecutionStrategy executionStrategy, Boolean startLocalTransaction, Boolean releaseConnectionOnSuccess)
+   at System.Data.Entity.Core.Objects.ObjectContext.SaveChangesToStore(SaveOptions options, IDbExecutionStrategy executionStrategy, Boolean startLocalTransaction)
+   at System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.Execute[TResult](Func`1 operation)
+   at System.Data.Entity.Core.Objects.ObjectContext.SaveChangesInternal(SaveOptions options, Boolean executeInExistingTransaction)
+   at System.Data.Entity.Internal.InternalContext.SaveChanges()
+   --- End of inner exception stack trace ---
+   at System.Data.Entity.Internal.InternalContext.SaveChanges()
+   at JobsPortal.Controllers.JobController.PostJob(PostJobMV postJobMV) in E:\JobApp\JobsPortal-first-master\JobsPortal\Controllers\JobController.cs:line 73
+2024-03-11 15:03:24,673 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-11 21:23:48,422 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-11 21:24:23,546 INFO JobsPortal.Controllers.UserController - User with username RashmiPriya logged in successfully.
+2024-03-11 21:24:23,577 INFO JobsPortal.Controllers.HomeController - Accessed HomeController's Index action.
+2024-03-11 21:24:47,809 INFO JobsPortal.Controllers.JobController - PostJob - Successfully posted job by UserId: 7 and CompanyID: 1

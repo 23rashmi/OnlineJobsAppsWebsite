@@ -1,0 +1,62 @@
+﻿@model IEnumerable<DatabaseAccessLayer.JobCategoryTable>
+
+@{
+    ViewBag.Title = "Job Categories";
+}
+
+<style>
+    /* Adding some basic styling for better spacing and alignment */
+    .table-head > div,
+    .table-row > div {
+        padding: 8px 15px; /* Adjust as per page requirement*/
+    }
+
+    .serial {
+        width: 50px; /* Adjust as per page requirement */
+        text-align: center;
+    }
+
+    .category {
+        flex: 2; /* give more weight to this column */
+    }
+
+    .description {
+        flex: 3; /* give more weight to this column */
+    }
+
+    .action {
+        flex: 1;
+    }
+
+    /* Ensuring each row is a flex container for flex properties to take effect */
+    .table-head, .table-row {
+        display: flex;
+    }
+</style>
+
+<div class="section-top-border col-md-10">
+    <h3 class="mb-30">All Job Categories @Html.ActionLink("New Job Category", "Create", null, new { @class = "btn btn-default", @style = "float:right; border-radius: 10px;" })</h3>
+    <div class="progress-table-wrap">
+        <div class="progress-table">
+            <div class="table-head">
+                <div class="serial">#</div>
+                <div class="category">Job Category</div>
+                <div class="description">Description</div>
+                <div class="action">Action</div>
+            </div>
+
+            @foreach (var item in Model)
+            {
+                <div class="table-row">
+                    <div class="serial">@Html.DisplayFor(modelItem => item.JobCategoryID)</div>
+                    <div class="category"> @Html.DisplayFor(modelItem => item.JobCategory)</div>
+                    <div class="description">@Html.DisplayFor(modelItem => item.Description)</div>
+                    <div class="action">
+                        @Html.ActionLink("Edit", "Edit", new { id = item.JobCategoryID }, new { @class = "genric-btn primary circle" })
+                    </div>
+                </div>
+            }
+
+        </div>
+    </div>
+</div>

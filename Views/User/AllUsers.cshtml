@@ -1,0 +1,66 @@
+﻿@model IEnumerable<DatabaseAccessLayer.UserTable>
+
+@{
+    ViewBag.Title = "All Users";
+}
+
+<style>
+    /* Adding some basic styling for better spacing and alignment */
+    .table-head > div,
+    .table-row > div {
+        padding: 8px 15px; /* Adjust as per page requirement*/
+    }
+
+    .serial {
+        width: 50px; /* Adjust as per page requirement */
+        text-align: center;
+    }
+
+    .username {
+        flex: 2; /* give more weight to this column */
+    }
+
+    .email {
+        flex: 3; /* give more weight to this column */
+    }
+
+    .contact {
+        flex: 2;
+    }
+
+    .user-type {
+        flex: 2;
+    }
+
+    /* Ensuring each row is a flex container for flex properties to take effect */
+    .table-head, .table-row {
+        display: flex;
+    }
+</style>
+
+<div class="section-top-border col-md-10">
+    <h3 class="mb-30">All Users</h3>
+    <div class="progress-table-wrap">
+        <div class="progress-table">
+            <div class="table-head">
+                <div class="serial">#</div>
+                <div class="username">User Name</div>
+                <div class="email">Email Address</div>
+                <div class="contact">Contact Number</div>
+                <div class="user-type">User Type</div>
+            </div>
+
+            @foreach (var item in Model)
+            {
+                <div class="table-row">
+                    <div class="serial">@Html.DisplayFor(modelItem => item.UserID)</div>
+                    <div class="username">@Html.DisplayFor(modelItem => item.UserName)</div>
+                    <div class="email">@Html.DisplayFor(modelItem => item.EmailAddress)</div>
+                    <div class="contact">@Html.DisplayFor(modelItem => item.ContactNo)</div>
+                    <div class="user-type">@Html.DisplayFor(modelItem => item.UserTypeTable.UserType)</div>
+                </div>
+            }
+
+        </div>
+    </div>
+</div>

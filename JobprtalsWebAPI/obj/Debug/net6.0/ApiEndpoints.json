@@ -1,0 +1,765 @@
+[
+  {
+    "ContainingType": "JobprtalsWebAPI.Controllers.JobCategoryTablesController",
+    "Method": "GetJobCategoryTables",
+    "RelativePath": "api/JobCategoryTables",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[JobprtalsWebAPI.Models.JobCategoryTable, JobprtalsWebAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "JobprtalsWebAPI.Controllers.JobCategoryTablesController",
+    "Method": "PostJobCategoryTable",
+    "RelativePath": "api/JobCategoryTables",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "jobCategoryTable",
+        "Type": "JobprtalsWebAPI.Models.JobCategoryTable",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "JobprtalsWebAPI.Models.JobCategoryTable",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "JobprtalsWebAPI.Controllers.JobCategoryTablesController",
+    "Method": "GetJobCategoryTable",
+    "RelativePath": "api/JobCategoryTables/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "JobprtalsWebAPI.Models.JobCategoryTable",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "JobprtalsWebAPI.Controllers.JobCategoryTablesController",
+    "Method": "PutJobCategoryTable",
+    "RelativePath": "api/JobCategoryTables/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "jobCategoryTable",
+        "Type": "JobprtalsWebAPI.Models.JobCategoryTable",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "JobprtalsWebAPI.Controllers.JobCategoryTablesController",
+    "Method": "DeleteJobCategoryTable",
+    "RelativePath": "api/JobCategoryTables/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "JobprtalsWebAPI.Controllers.JobNatureTablesController",
+    "Method": "GetJobNatureTables",
+    "RelativePath": "api/JobNatureTables",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[JobprtalsWebAPI.Models.JobNatureTable, JobprtalsWebAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "JobprtalsWebAPI.Controllers.JobNatureTablesController",
+    "Method": "PostJobNatureTable",
+    "RelativePath": "api/JobNatureTables",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "jobNatureTable",
+        "Type": "JobprtalsWebAPI.Models.JobNatureTable",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "JobprtalsWebAPI.Models.JobNatureTable",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "JobprtalsWebAPI.Controllers.JobNatureTablesController",
+    "Method": "GetJobNatureTable",
+    "RelativePath": "api/JobNatureTables/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "JobprtalsWebAPI.Models.JobNatureTable",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "JobprtalsWebAPI.Controllers.JobNatureTablesController",
+    "Method": "PutJobNatureTable",
+    "RelativePath": "api/JobNatureTables/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "jobNatureTable",
+        "Type": "JobprtalsWebAPI.Models.JobNatureTable",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "JobprtalsWebAPI.Controllers.JobNatureTablesController",
+    "Method": "DeleteJobNatureTable",
+    "RelativePath": "api/JobNatureTables/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "JobprtalsWebAPI.Controllers.JobRequirementDetailsTablesController",
+    "Method": "GetJobRequirementDetailsTables",
+    "RelativePath": "api/JobRequirementDetailsTables",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[JobprtalsWebAPI.Models.JobRequirementDetailsTable, JobprtalsWebAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "JobprtalsWebAPI.Controllers.JobRequirementDetailsTablesController",
+    "Method": "PostJobRequirementDetailsTable",
+    "RelativePath": "api/JobRequirementDetailsTables",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "jobRequirementDetailsTable",
+        "Type": "JobprtalsWebAPI.Models.JobRequirementDetailsTable",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "JobprtalsWebAPI.Models.JobRequirementDetailsTable",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "JobprtalsWebAPI.Controllers.JobRequirementDetailsTablesController",
+    "Method": "GetJobRequirementDetailsTable",
+    "RelativePath": "api/JobRequirementDetailsTables/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "JobprtalsWebAPI.Models.JobRequirementDetailsTable",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "JobprtalsWebAPI.Controllers.JobRequirementDetailsTablesController",
+    "Method": "PutJobRequirementDetailsTable",
+    "RelativePath": "api/JobRequirementDetailsTables/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "jobRequirementDetailsTable",
+        "Type": "JobprtalsWebAPI.Models.JobRequirementDetailsTable",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "JobprtalsWebAPI.Controllers.JobRequirementDetailsTablesController",
+    "Method": "DeleteJobRequirementDetailsTable",
+    "RelativePath": "api/JobRequirementDetailsTables/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "JobprtalsWebAPI.Controllers.JobRequirementsTablesController",
+    "Method": "GetJobRequirementsTables",
+    "RelativePath": "api/JobRequirementsTables",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[JobprtalsWebAPI.Models.JobRequirementsTable, JobprtalsWebAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "JobprtalsWebAPI.Controllers.JobRequirementsTablesController",
+    "Method": "PostJobRequirementsTable",
+    "RelativePath": "api/JobRequirementsTables",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "jobRequirementsTable",
+        "Type": "JobprtalsWebAPI.Models.JobRequirementsTable",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "JobprtalsWebAPI.Models.JobRequirementsTable",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "JobprtalsWebAPI.Controllers.JobRequirementsTablesController",
+    "Method": "GetJobRequirementsTable",
+    "RelativePath": "api/JobRequirementsTables/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "JobprtalsWebAPI.Models.JobRequirementsTable",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "JobprtalsWebAPI.Controllers.JobRequirementsTablesController",
+    "Method": "PutJobRequirementsTable",
+    "RelativePath": "api/JobRequirementsTables/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "jobRequirementsTable",
+        "Type": "JobprtalsWebAPI.Models.JobRequirementsTable",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "JobprtalsWebAPI.Controllers.JobRequirementsTablesController",
+    "Method": "DeleteJobRequirementsTable",
+    "RelativePath": "api/JobRequirementsTables/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "JobprtalsWebAPI.Controllers.JobStatusTablesController",
+    "Method": "GetJobStatusTables",
+    "RelativePath": "api/JobStatusTables",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[JobprtalsWebAPI.Models.JobStatusTable, JobprtalsWebAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "JobprtalsWebAPI.Controllers.JobStatusTablesController",
+    "Method": "PostJobStatusTable",
+    "RelativePath": "api/JobStatusTables",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "jobStatusTable",
+        "Type": "JobprtalsWebAPI.Models.JobStatusTable",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "JobprtalsWebAPI.Models.JobStatusTable",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "JobprtalsWebAPI.Controllers.JobStatusTablesController",
+    "Method": "GetJobStatusTable",
+    "RelativePath": "api/JobStatusTables/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "JobprtalsWebAPI.Models.JobStatusTable",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "JobprtalsWebAPI.Controllers.JobStatusTablesController",
+    "Method": "PutJobStatusTable",
+    "RelativePath": "api/JobStatusTables/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "jobStatusTable",
+        "Type": "JobprtalsWebAPI.Models.JobStatusTable",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "JobprtalsWebAPI.Controllers.JobStatusTablesController",
+    "Method": "DeleteJobStatusTable",
+    "RelativePath": "api/JobStatusTables/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "JobprtalsWebAPI.Controllers.UserTablesController",
+    "Method": "GetUserTables",
+    "RelativePath": "api/UserTables",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[JobprtalsWebAPI.Models.UserTable, JobprtalsWebAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "JobprtalsWebAPI.Controllers.UserTablesController",
+    "Method": "PostUserTable",
+    "RelativePath": "api/UserTables",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userTable",
+        "Type": "JobprtalsWebAPI.Models.UserTable",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "JobprtalsWebAPI.Models.UserTable",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "JobprtalsWebAPI.Controllers.UserTablesController",
+    "Method": "GetUserTable",
+    "RelativePath": "api/UserTables/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "JobprtalsWebAPI.Models.UserTable",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "JobprtalsWebAPI.Controllers.UserTablesController",
+    "Method": "PutUserTable",
+    "RelativePath": "api/UserTables/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "userTable",
+        "Type": "JobprtalsWebAPI.Models.UserTable",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "JobprtalsWebAPI.Controllers.UserTablesController",
+    "Method": "DeleteUserTable",
+    "RelativePath": "api/UserTables/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "JobprtalsWebAPI.Controllers.UserTypeTablesController",
+    "Method": "GetUserTypeTables",
+    "RelativePath": "api/UserTypeTables",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[JobprtalsWebAPI.Models.UserTypeTable, JobprtalsWebAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "JobprtalsWebAPI.Controllers.UserTypeTablesController",
+    "Method": "PostUserTypeTable",
+    "RelativePath": "api/UserTypeTables",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userTypeTable",
+        "Type": "JobprtalsWebAPI.Models.UserTypeTable",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "JobprtalsWebAPI.Models.UserTypeTable",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "JobprtalsWebAPI.Controllers.UserTypeTablesController",
+    "Method": "GetUserTypeTable",
+    "RelativePath": "api/UserTypeTables/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "JobprtalsWebAPI.Models.UserTypeTable",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "JobprtalsWebAPI.Controllers.UserTypeTablesController",
+    "Method": "PutUserTypeTable",
+    "RelativePath": "api/UserTypeTables/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "userTypeTable",
+        "Type": "JobprtalsWebAPI.Models.UserTypeTable",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "JobprtalsWebAPI.Controllers.UserTypeTablesController",
+    "Method": "DeleteUserTypeTable",
+    "RelativePath": "api/UserTypeTables/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]

@@ -1,0 +1,65 @@
+﻿@model DatabaseAccessLayer.JobCategoryTable
+
+@{
+    ViewBag.Title = "New Job Category";
+}
+
+<div class="section-top-border">
+    <div class="row">
+        <div class="col-lg-6 col-md-6">
+            <h3 class="mb-30">New Job Category</h3>
+
+            @using (Html.BeginForm())
+            {
+                @Html.AntiForgeryToken()
+                @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+
+                <div class="mt-4">
+                    @Html.LabelFor(model => model.JobCategory, new { @class = "form-label" })
+                    @Html.EditorFor(model => model.JobCategory, new
+                    {
+                        htmlAttributes = new
+                        {
+                            @class = "form-control single-input",
+                            @type = "text",
+                            @name = "jobcategory",
+                            @placeholder = "Enter Job Category",
+                            @onfocus = "this.placeholder = ''",
+                            @onblur = "this.placeholder = 'Job Category'",
+                            @required = true
+                        }
+                    })
+                    @Html.ValidationMessageFor(model => model.JobCategory, "", new { @class = "text-danger" })
+                </div>
+
+                <div class="mt-4">
+                    @Html.LabelFor(model => model.Description, new { @class = "form-label" })
+                    @Html.EditorFor(model => model.Description, new
+                    {
+                        htmlAttributes = new
+                        {
+                            @class = "form-control single-input",
+                            @type = "text",
+                            @name = "description",
+                            @placeholder = "Enter Description",
+                            @onfocus = "this.placeholder = ''",
+                            @onblur = "this.placeholder = 'Description'",
+                            @required = true
+                        }
+                    })
+                    @Html.ValidationMessageFor(model => model.Description, "", new { @class = "text-danger" })
+                </div>
+
+                <hr />
+                <div class="form-group mt-4">
+                    <input type="submit" value="Save" class="genric-btn success e-large circle" style="float:right;" />
+                    @Html.ActionLink("Back to List", "Index", null, new { @class = "btn btn-default", @style = "float:left; border-radius: 10px;" })
+                </div>
+            }
+
+            <div>
+
+            </div>
+        </div>
+    </div>
+</div>

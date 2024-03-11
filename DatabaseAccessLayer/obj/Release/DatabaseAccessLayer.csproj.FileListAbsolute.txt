@@ -1,0 +1,12 @@
+C:\Users\priye\OneDrive\Desktop\Mar-09\JobsPortal-first-master\JobsPortal-first-master\DatabaseAccessLayer\bin\Release\DatabaseAccessLayer.dll.config
+C:\Users\priye\OneDrive\Desktop\Mar-09\JobsPortal-first-master\JobsPortal-first-master\DatabaseAccessLayer\bin\Release\DatabaseAccessLayer.dll
+C:\Users\priye\OneDrive\Desktop\Mar-09\JobsPortal-first-master\JobsPortal-first-master\DatabaseAccessLayer\bin\Release\DatabaseAccessLayer.pdb
+C:\Users\priye\OneDrive\Desktop\Mar-09\JobsPortal-first-master\JobsPortal-first-master\DatabaseAccessLayer\bin\Release\EntityFramework.dll
+C:\Users\priye\OneDrive\Desktop\Mar-09\JobsPortal-first-master\JobsPortal-first-master\DatabaseAccessLayer\bin\Release\EntityFramework.SqlServer.dll
+C:\Users\priye\OneDrive\Desktop\Mar-09\JobsPortal-first-master\JobsPortal-first-master\DatabaseAccessLayer\bin\Release\EntityFramework.xml
+C:\Users\priye\OneDrive\Desktop\Mar-09\JobsPortal-first-master\JobsPortal-first-master\DatabaseAccessLayer\bin\Release\EntityFramework.SqlServer.xml
+C:\Users\priye\OneDrive\Desktop\Mar-09\JobsPortal-first-master\JobsPortal-first-master\DatabaseAccessLayer\obj\Release\DatabaseAccessLayer.csproj.AssemblyReference.cache
+C:\Users\priye\OneDrive\Desktop\Mar-09\JobsPortal-first-master\JobsPortal-first-master\DatabaseAccessLayer\obj\Release\DatabaseAccessLayer.csproj.CoreCompileInputs.cache
+C:\Users\priye\OneDrive\Desktop\Mar-09\JobsPortal-first-master\JobsPortal-first-master\DatabaseAccessLayer\obj\Release\Database.47C9B4CC.Up2Date
+C:\Users\priye\OneDrive\Desktop\Mar-09\JobsPortal-first-master\JobsPortal-first-master\DatabaseAccessLayer\obj\Release\DatabaseAccessLayer.dll
+C:\Users\priye\OneDrive\Desktop\Mar-09\JobsPortal-first-master\JobsPortal-first-master\DatabaseAccessLayer\obj\Release\DatabaseAccessLayer.pdb

@@ -1,0 +1,125 @@
+﻿@model JobsPortal.Models.EmployeeMV
+@{
+    ViewBag.Title = "UserProfile";
+}
+
+<div class="section-top-border">
+    <div class="row">
+        <div class="col-lg-12 col-md-12">
+            <h3 class="mb-30">User Profile</h3>
+
+            @using (Html.BeginForm("UserProfile", "UserProfile", FormMethod.Post, new { @class = "form-contact", enctype = "multipart/form-data" }))
+            {
+                @Html.AntiForgeryToken()
+                @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+
+                <!-- Employee Name -->
+                <div class="mt-4">
+                    @Html.LabelFor(model => model.EmployeeName, "Enter First Name", new { @class = "form-label" })
+                    @Html.EditorFor(model => model.EmployeeName, new { htmlAttributes = new { @class = "form-control single-input", @placeholder = "Enter First Name" } })
+                    @Html.ValidationMessageFor(model => model.EmployeeName, "", new { @class = "text-danger" })
+                </div>
+
+                <!-- DOB -->
+                <div class="mt-4">
+                    @Html.LabelFor(model => model.DOB, "Date of Birth", new { @class = "form-label" })
+                    @Html.EditorFor(model => model.DOB, new { htmlAttributes = new { @class = "form-control single-input", @placeholder = "Enter Date of Birth" } })
+                    @Html.ValidationMessageFor(model => model.DOB, "", new { @class = "text-danger" })
+                </div>
+
+                <!-- Education -->
+                <div class="mt-4">
+                    @Html.LabelFor(model => model.Education, "Education", new { @class = "form-label" })
+                    @Html.EditorFor(model => model.Education, new { htmlAttributes = new { @class = "form-control single-input", @placeholder = "Enter Education Details" } })
+                    @Html.ValidationMessageFor(model => model.Education, "", new { @class = "text-danger" })
+                </div>
+
+                <!-- Description -->
+                <div class="mt-4">
+                    @Html.LabelFor(model => model.Description, "Add Description", new { @class = "form-label" })
+                    @Html.EditorFor(model => model.Description, new { htmlAttributes = new { @class = "form-control single-input", @placeholder = "Add Description" } })
+                    @Html.ValidationMessageFor(model => model.Description, "", new { @class = "text-danger" })
+                </div>
+
+                <!-- WorkExperience -->
+                <div class="mt-4">
+                    @Html.LabelFor(model => model.WorkExperience, "Add WorkExperience", new { @class = "form-label" })
+                    @Html.EditorFor(model => model.WorkExperience, new { htmlAttributes = new { @class = "form-control single-input", @placeholder = "Add WorkExperience" } })
+                    @Html.ValidationMessageFor(model => model.WorkExperience, "", new { @class = "text-danger" })
+                </div>
+
+                <!-- Skills -->
+                <div class="mt-4">
+                    @Html.LabelFor(model => model.Skills, "Add Skills", new { @class = "form-label" })
+                    @Html.EditorFor(model => model.Skills, new { htmlAttributes = new { @class = "form-control single-input", @placeholder = "Add Skills" } })
+                    @Html.ValidationMessageFor(model => model.Skills, "", new { @class = "text-danger" })
+                </div>
+
+                <!-- EmailAddress -->
+                <div class="mt-4">
+                    @Html.LabelFor(model => model.EmailAddress, "Add EmailAddress", new { @class = "form-label" })
+                    @Html.EditorFor(model => model.EmailAddress, new { htmlAttributes = new { @class = "form-control single-input", @placeholder = "Add EmailAddress" } })
+                    @Html.ValidationMessageFor(model => model.EmailAddress, "", new { @class = "text-danger" })
+                </div>
+
+                <!-- Gender -->
+                <div class="mt-4">
+                    @Html.LabelFor(model => model.Gender, "Gender", new { @class = "form-label" })
+                    @Html.DropDownListFor(
+                        model => model.Gender,
+                        new List<SelectListItem>
+                        {
+                            new SelectListItem { Text = "Male", Value = "Male" },
+                            new SelectListItem { Text = "Female", Value = "Female" },
+                            new SelectListItem { Text = "Other", Value = "Other" },
+                            new SelectListItem { Text = "Prefer Not to Say", Value = "Prefer Not to Say" }
+                        },
+                        "- Select -",
+                        new { @class = "form-control single-input" }
+                    )
+                    @Html.ValidationMessageFor(model => model.Gender, "", new { @class = "text-danger" })
+                </div>
+
+                <!-- Photo -->
+                <div class="mt-4">
+                    @Html.LabelFor(model => model.Photo, "Upload Photo", new { @class = "form-label" })
+                    <input type="file" name="PhotoFile" class="form-control single-input" accept="image/*" />
+                    @Html.ValidationMessageFor(model => model.Photo, "", new { @class = "text-danger" })
+                </div>
+
+                <!-- Qualification -->
+                <div class="mt-4">
+                    @Html.LabelFor(model => model.Qualification, "Add Qualification", new { @class = "form-label" })
+                    @Html.EditorFor(model => model.Qualification, new { htmlAttributes = new { @class = "form-control single-input", @placeholder = "Add Qualification" } })
+                    @Html.ValidationMessageFor(model => model.Qualification, "", new { @class = "text-danger" })
+                </div>
+
+                <!-- PermanentAddress -->
+                <div class="mt-4">
+                    @Html.LabelFor(model => model.PermanentAddress, "Add PermanentAddress", new { @class = "form-label" })
+                    @Html.EditorFor(model => model.PermanentAddress, new { htmlAttributes = new { @class = "form-control single-input", @placeholder = "Add PermanentAddress" } })
+                    @Html.ValidationMessageFor(model => model.PermanentAddress, "", new { @class = "text-danger" })
+                </div>
+
+                <!-- JobReference -->
+                <div class="mt-4">
+                    @Html.LabelFor(model => model.JobReference, "Add JobReference", new { @class = "form-label" })
+                    @Html.EditorFor(model => model.JobReference, new { htmlAttributes = new { @class = "form-control single-input", @placeholder = "Add JobReference" } })
+                    @Html.ValidationMessageFor(model => model.JobReference, "", new { @class = "text-danger" })
+                </div>
+
+                <!-- Upload Resume -->
+                <div class="mt-4">
+                    @Html.Label("Upload Resume", new { @class = "form-label" })
+                    <input type="file" name="ResumeFile" />
+                </div>
+
+                <!-- Submit Button -->
+                <hr />
+                <div class="form-group mt-4">
+                    <input type="submit" value="Update Profile" class="genric-btn success e-large circle" />
+                </div>
+            }
+        </div>
+    </div>
+</div>

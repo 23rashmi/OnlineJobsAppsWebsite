@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "3EG15EvGX9oRiDzD2ubVbYHz0vDjIezxhNhjVrPsTmI=",
+  "Source": "JobprtalsWebAPI",
+  "BasePath": "_content/JobprtalsWebAPI",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

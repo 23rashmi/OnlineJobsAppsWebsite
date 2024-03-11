@@ -1,0 +1,157 @@
+﻿﻿@model IEnumerable<DatabaseAccessLayer.EmployeesTable>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Form Filling </h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.EmployeeName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DOB)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Education)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.WorkExperience)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Skills)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.EmailAddress)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Gender)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Photo)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Qualification)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.PermanentAddress)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.JobReference)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Description)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Resume)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.UserTable.UserName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.PostJobTable.PostJobID)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.PostJobTable.JobTitle)
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.EmployeeName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DOB)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Education)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.WorkExperience)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Skills)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.EmailAddress)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Gender)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Photo)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Qualification)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PermanentAddress)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.JobReference)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Description)
+            </td>
+            <td>
+                @*@Html.DisplayFor(modelItem => item.Resume)*@
+                @*@Html.("", "", new {path=item.Resume }, new { @class = "genric-btn info circle", @style = "margin-bottom: 10px;" })*@
+                @*<a href=@Html.DisplayFor(modelItem=>item.Resume)>*@
+                @Html.ActionLink("Download", "Download", new { path = item.Resume }, new { @class = "genric-btn info circle", @style = "margin-bottom: 10px;" })
+
+                @*</a>*@
+
+            </td>
+
+            <td>
+                @Html.DisplayFor(modelItem => item.UserTable.UserName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PostJobTable.PostJobID)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PostJobTable.JobTitle)
+            </td>
+
+            <td>
+                <br>
+                @Html.ActionLink("Edit", "Edit", new { id = item.EmployeeID }, new { @class = "genric-btn info circle", @style = "margin-bottom: 10px;" })
+                <br />
+
+                <br>
+                @Html.ActionLink("Details", "Details", new { id = item.EmployeeID }, new { @class = "genric-btn info circle", @style = "margin-bottom: 10px;" })
+                <br />
+
+                <br>
+                @Html.ActionLink("Delete", "Delete", new { id = item.EmployeeID }, new { @class = "genric-btn info circle", @style = "margin-bottom: 10px;" })
+                <br />
+
+
+
+            </td>
+        </tr>
+    }
+
+</table>
+
+@section Scripts {
+    <script>
+        
+
+            function downloadFiles(path) {
+                window.downloadFiles(path)
+            }
+
+            
+
+        
+    </script>
+}

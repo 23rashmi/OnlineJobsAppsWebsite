@@ -1,0 +1,94 @@
+﻿@model IEnumerable<DatabaseAccessLayer.UserTable>
+
+@{
+    ViewBag.Title = "All Users";
+}
+
+<style>
+    /* Adding some basic styling for better spacing and alignment */
+    .table-head > div,
+    .table-row > div {
+        padding: 8px 15px; /* Adjust as per page requirement*/
+    }
+
+    .serial {
+        width: 50px; /* Adjust as per page requirement */
+        text-align: center;
+    }
+
+    .username {
+        flex: 2; /* give more weight to this column */
+    }
+
+    .email {
+        flex: 3; /* give more weight to this column */
+    }
+
+    .contact {
+        flex: 2;
+    }
+
+    .user-type {
+        flex: 2;
+    }
+
+    /* Ensuring each row is a flex container for flex properties to take effect */
+    .table-head, .table-row {
+        display: flex;
+    }
+
+    .actions {
+        width: 120px; /* Adjust as per page requirement */
+        text-align: center;
+    }
+
+    .btn-danger {
+        background-color: #dc3545;
+        border: none;
+        color: white;
+        padding: 10px 20px; /* Increased padding for a larger button */
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 14px; /* Increased font size */
+        margin: 4px 2px;
+        cursor: pointer;
+        border-radius: 6px; /* Slightly increased border-radius for rounded corners */
+        transition: background-color 0.3s; /* Optional: smooth transition effect on hover */
+    }
+
+        /* Optional: Change button color slightly on hover for feedback */
+        .btn-danger:hover {
+            background-color: #c82333;
+        }
+</style>
+
+<div class="section-top-border col-md-10">
+    <h3 class="mb-30">All Users</h3>
+    <div class="progress-table-wrap">
+        <div class="progress-table">
+            <div class="table-head">
+                <div class="username">User Name</div>
+                <div class="email">Email Address</div>
+                <div class="contact">Contact Number</div>
+                <div class="user-type">User Type</div>
+                <div class="actions">Actions</div>
+
+            </div>
+
+            @foreach (var item in Model)
+            {
+                <div class="table-row">
+                    <div class="username">@Html.DisplayFor(modelItem => item.UserName)</div>
+                    <div class="email">@Html.DisplayFor(modelItem => item.EmailAddress)</div>
+                    <div class="contact">@Html.DisplayFor(modelItem => item.ContactNo)</div>
+                    <div class="user-type">@Html.DisplayFor(modelItem => item.UserTypeTable.UserType)</div>
+                    <div class="actions">
+                        @Html.ActionLink("Delete", "DeleteUser", new { id = item.UserID }, new { @class = "btn btn-danger btn-sm", onclick = "return confirm('Are you sure you want to delete this user?');" })
+                    </div>
+                </div>
+            }
+
+        </div>
+    </div>
+</div>

@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="JobsPortalDbEntities-Web.config Connection String" description="JobsPortalDbEntities Connection String used in web.config by the application to access the database." defaultValue="metadata=res://*/JobPortalsDbModel.csdl|res://*/JobPortalsDbModel.ssdl|res://*/JobPortalsDbModel.msl;provider=System.Data.SqlClient;provider connection string=&quot;data source=RASHMIPRIYA;initial catalog=JobsPortalDb;integrated security=True;MultipleActiveResultSets=True;App=EntityFramework&quot;" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="C:\\Users\\priye\\OneDrive\\Desktop\\Mar-09\\JobsPortal-first-master\\JobsPortal-first-master\\JobsPortal\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='JobsPortalDbEntities']/@connectionString" />
+  </parameter>
+</parameters>
